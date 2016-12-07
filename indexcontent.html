@@ -33,20 +33,150 @@
 			To add new content to the page itself you must do through the indexcontent.hmtl file. You must create a section in the file and use the same section label you created in the indexmenu file eg. (if your label in indexmenu is section #13 then it must be section #13 in indexcontent). After doing this you can add anything you want to the section. (Remember to close all tags)</p></li></ul>
 
 	
-	<li> System Diagram </li>
-	<img src="documentation/systemdiagram.jpg" style="width:400px;height:400px;" >
-	
-	<li> Budget 
-	<ul>
-		<li>
-	<a href="https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/Budget.docx?raw=true">My Budget</a>
+		<li> System Diagram </li>
+		<img src="documentation/system diagram.jpg" style="width:400px;height:400px;" >
+
+		<li> Budget 
+		<ul>
+			<li>
+		<a href="https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/Budget.docx?raw=true">My Budget</a>
+			</li>
+		</ul>
 		</li>
-	</ul>
-	
-	<li><a href="documentation/Build%20Instructions.docx">Build Instructions</a></li>
-	
-	
-	
+		<li><h4>Time Commitment</h4>
+
+			<p>Approximate time for project completion : 1 year</p>
+			<p>Time required for first stage:12 weeks (10 weeks ideally)</p>
+			<p>Amount of hours required per week: 6 hours</p>
+		</li>
+		<li><h4>Mechanical Assembly</h4>
+			<p> Follow the steps in this video to assemble the car: </p>
+			<a href="https://www.youtube.com/watch?v=uW8YVcBjPGU">Assembly steps</a>
+			<p>It is recommended that you connect the motors for the wheels that are on the same side.</p>
+			<p>The motor driver(L298) and the raspberry pi can be mounted anywhere on the car using the screw holes in each.</p>
+			<p>To connect the Motor Driver to the motors, follow these steps:<p>
+			<ol>
+				<li>Loosen the screws on the OUT ports (OUT1, OUT2, OUT3, OUT4)</li>
+				<li>Put the red and black leads from the right motors of the car into OUT2 and OUT1 respectively then tighten the screws.</li>
+				<li>Place the red and black wires from the left side into OUT4 and OUT3 respectively then tighten the screws.</li>
+			</ol>
+			<p>After the motor driver is connected to the motors you must now connect the driver to the raspberry pi and the power supply<p>
+			<ol>
+				<li>Loosen the screws on the 5V, round and VCC ports</li>
+				<li>Take the red lead from the power supply and place it into the VCC port then take the black lead and push it into the ground port. Tighten the screws on the VCC port but leave the ground port open for now</li>
+				<li> a male to female wire and plug the header onto pin 2 on your raspberry pi (this is the 5V out pin) then push the male head into the 5V port on the motor driver.</li>
+				<li>Using another male to female wire, plug the header onto pin 6 on the raspberry pi and push the male head into the ground port on the motor driver.</li>
+				<li>You can now tighten the screws on the 5V and ground ports</li>
+			</ol>
+			<p>To setup the PCB and breadboard</p>
+			<p><img src="documentation/pcblayout.jpg" style="width:400px;height:400px;" ></p>
+			<p><img src="documentation/boardschematic.png" style="width:400px;height:400px;" ></p>
+			
+		</li>
+		<li><h4>PCB/Soldering</h4>
+			<p>Soldering onto the PCB is a simple task that even beginners can carry out but it is recommended that you have at least basic knowledge of circuitry. Practice before you solder onto your pcb to minimize mistakes
+			<p><b>Step 1</b></p>
+				<p>Get a soldering iron, a PCB holder and some solder.</p>
+
+			<p><b>Step 2</b></p>
+				<p>Place the PCB into the PCB holder and plug the soldering iron in to heat it up</p>
+
+			<p><b>Step 3</b></p>
+				<p>	When the LED on the soldering iron has turned green this means you can begin soldering</p>
+			<p>Start by cleaning the putting some solder onto the iron and wipe it off on a sponge (this is done to clean the iron)</p>
+
+			<p><b>Step 4</b></p>
+				<p>Look at your schematic then begin soldering on the necessary parts. (MAKE SURE TO FOLLOW SCHEMATIC)</p>
+		</li>
+		<li><h4>Power Up</h4>
+			<p>In this phase, you will be powering up your car and PCB(if you chose to use one)</p>
+			<p><b>Powering up the PCB </b></p>
+			<ul>
+				<li>The raspberrypi by default comes loaded with an OS but it is recommended you reinstall it </li>
+				<li>Format the SD card then use http://sourceforge.net/projects/win32diskimager/ to write the image file  https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-09-28/2016-09-23-raspbian-jessie.zip onto it. </li>
+				<li>Using the HDMI cable from the rapsberrypi kit connect the pi to a monitor </li>
+				<li>Using an Ethernet cable connect the pi to a source of internet.(or use wifi)  </li>
+				<li> Put the sd card into your raspberrypi and power it on. </li>
+				<li>When the raspberry pi is powered on look for the ip address (hover cursor over internet icon or use ifconifg in the terminal)</li>
+				<li>Open remote pc, enter the ip address and connect to the pi. </li>
+				<li>Go to the six0four.github.io repository and look in the ModularSenseHatStripped folder for a file called traffic 2B.c. Download the file to your desktop. </li>
+				<li>Put the PCB header onto the raspberry pi’s pins </li>
+				<li>Go to the terminal and run the traffic 2B.c program, the LED’s on the PCB should now start changing colours. </li>
+			</ul>
+			<p><b>Powering up the Car</b></p>
+			<ul>
+				<li>Put the batteries into the battery holder </li>
+				<li>If the H Drive is receiving power from the batteries the LED should illuminate </li>
+				<li>Remove one of the batteries from the battery holder to turn of the motors as you will need to test if the raspberry pi is powering the motor driver </li>
+				<li>Plug in the raspberry pi and the LED on the motor driver should illuminate once again </li>
+				<li>Now put the batteries back into the battery holder and all components should be powered up </li>							
+			</ul>			
+		</li>
+		<li><h4>Unit Testing</h4>
+			<p><b>Testing the H Drive & Battery Power Up</b></p>
+			<p>Place the batteries into battery holder and the LED should turn on and shine red</p>
+			
+			<p><b>Testing H Drive & Raspberry Pi Power Up</b></p>
+			<p>Plug the raspberry pi into a power source and the LED should turn on.</p>
+			
+			<p><b>Testing Raspberry Pi</b></p>
+			<ul>
+				<li>Plug the raspberry pi into a power source and connect it to a monitor. </li>
+				<li>You should be greeted by a screen asking you to enter your login information</li>
+				<li>If you haven’t made any modifications then the default credentials are 
+					Username: pi 		Password: raspberry</li>
+				<li>Open the browser and go to any website</li>
+				<li>If the pi is connected to internet you should have no problem</li>
+				<li></li>
+				<li></li>
+			</ul>
+			<p><b>Testing the motors</b></p>
+			<ul>
+				<li>	Ensure all connections are made according to the build instructions</li>
+				<li>	Power up the raspberry pi and login</li>
+				<li>	Go onto my repository github.com/Khemar1/khemar1.github.io/Documentation and download the fwdback.py program</li>
+				<li>	Go to your terminal and go to the directory where you downloaded fwback.py</li>
+				<li>	Run the program using sudo python fwdback.py</li>
+				<li>	If all connections were made correctly then the wheels should move forward and backward</li>
+			</ul>
+			<p><b>Testing the sensors</b></p>
+			<ul>
+				<li> To test the sensor the steps are similar to that of the motors.</li>
+				<li>Power up the raspberry pi and login</li>
+				<li>Go to the Documentation folder on the repository and download the program sensor2.py</li>
+				<li>Open your terminal and go into the directory where you downloaded the program</li>
+				<li>Run the program using sensor2.py</li>
+				<li>Place an object in front of the sensor and it should return the distance of the object to the screen.</li>
+			</ul>		
+		</li>
+		<li><h4>Product Testing</h4>
+			<p>When unit testing has been complete and all problems resolved, you can now test the car as a whole. Follow these steps to test that all components work together:</p>
+			<ul>
+				<li>Power up the raspberry pi</li>
+				<li>Put in the batteries</li>
+				<li>Connect the raspberry pi to a monitor or use remote pc to view the desktop</li>
+				<li>Login to the raspberry pi</li>
+				<li>Open your browser and go to to the documentations folder in my repository and download the program auto1.py</li>
+				<li>Elevate the car so that it isn’t touching the ground (You can place it on top of something)</li>
+				<li>Go to your terminal and navigate to where you downloaded auto1.py</li>
+				<li>Run the program using sudo python auto1.py </li>
+				<li>The wheels should move forward continuously</li>
+				<li>Wave your hand in front of the sensors and the wheels should change direction</li>				
+			</ul>
+			
+			<p>You can further test the car by placing it in an open area and watching it go</p>
+			<ul>
+				<li>Follow the previous steps but use remote pc to connect instead of using a monitor. This is important because you want the car to move freely</li>
+				<li>Place the car in the open area</li>
+				<li>Run the program again</li>
+				<li>The car should move forward continuously</li>
+				<li>When the car senses an obstacle it should reverse and change direction(whether it be left or right. This is choses randomly by the program)</li>
+				<li>If it senses an obstacle in the direction it turned to then it will turn once again.</li>
+				<li>The car will continuously do this until it cannot find a path to continue</li>				
+			</ul>		
+		</li>
+
+	</ul>	
 </SECTION>
 	
 	
