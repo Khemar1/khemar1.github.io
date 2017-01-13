@@ -1,7 +1,7 @@
 
 <p>Website: <a href="https://khemar1.github.io/">khemar1.github.io</a></p>
 
-<h1>Project Proposal</h1>
+<h2>Project Proposal</h2>
 
 
 <p>For our hardware project our team will be building an autonomous RC car. Through Bluetooth or Wi-Fi this car will connect to an android app which we will develop for this project. Through the app the user will be able to retrieve information from the car. An option will be available to allow the user to control the car itself using onscreen controls. The car will have sensors which will detect walls and other obstacles causing the car to change its course so as to avoid said obstacle. The car will map a certain area and it will send the mapped area to a data base which then can be retrieved by the app and displayed as a 2d map.</p>  
