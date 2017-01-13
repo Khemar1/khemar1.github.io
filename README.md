@@ -1,6 +1,12 @@
 <h1> Autonomous Vehicle </h1>
 
 <p>Website: <a href="https://khemar1.github.io/">khemar1.github.io</a></p>
+<p>Team Members:</p>
+ <ul>
+  <li>Khemar Bryan</li>
+  <li>Jan Yalda</li>
+  <li>Bilal Alfanous</li>
+ </ul>
 
 <h3>Project Proposal</h3>
 
