@@ -1,4 +1,4 @@
-Team name:      JBK.17
+Team name:      <b>JBK.17</b>
 Team Members:	  Bilal Alfanous	(Project Manager)	N00994056
                 John Yalda				N01037094
                 Khemar Bryan 			N01004500
