@@ -1,6 +1,6 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
 
 **Auto Vehicle**
@@ -75,13 +75,12 @@ mobile device application. The internet connected hardware will include distance
 sensors and actuators for controlling the movement of the vehicle. The database
 will store the mapped area. The mobile device functionality will include remote
 controlling the vehicle and displaying the mapped area and will be further
-detailed in the mobile application proposal. I will continue to work together
-this Winter semester with Jan Yalda and Bilal Al-Fanous, who also built similar
-hardware last term and worked on the mobile application with me. The hardware
-will be completed in CENG 317 Hardware Production Techniques independently and
-the application will be completed in CENG 319 Software Project. These will be
-integrated together in the subsequent term in CENG 355 Computer Systems Project
-as a member of a 3-student group.
+detailed in the mobile application proposal. We will continue to work together
+this Winter semester as we all built similar hardware last term and worked on
+the mobile application. The hardware was completed in CENG 317 Hardware
+Production Techniques independently and the application was completed in CENG
+319 Software Project. These will be integrated together this semester in CENG
+355 Computer Systems Project as a member of this 3-student group.
 
 ### **Background**
 
@@ -97,17 +96,17 @@ time send data to be used to map an area that will be displayed in the mobile
 application. Through Wi-Fi the ability to remote control the vehicle is possible
 using the mobile application.
 
-I have searched for prior art via Humber’s IEEE subscription selecting “My
+We have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” [1] and have found and read the following three articles
 which provides insight into similar efforts.
 
 -   Algorithm Fusion for Feature Extraction and Map Construction from SONAR
     Data@7158986
 
--   SLAM for robot navigation @4694832
+-   SLAM for robot navigation@4694832
 
 -   An Open-Source Scaled Automobile Platform for Fault-Tolerant Electronic
-    Stability Control @5398839
+    Stability Control@5398839
 
 In the Computer Engineering Technology program, we have learned about the
 following topics from the respective relevant courses:
@@ -233,22 +232,23 @@ project.
 
  
 
- 
+BODY
+====
 
  
 
 **Table of Contents**
 ---------------------
 
-1.  [List of Illustrations](#1.-list-of-illustrations)
+1.  List of Illustrations
 
-2.  [Introduction](#2.-introduction)
+2.  Introduction
 
-3.  [System Requirements Document](#system-requirements-document)
+3.  [System Requirements Document](#3.-system-requirements-document)
 
-    3.1 Introduction
+    [3.1 Introduction](#3.1-introduction)
 
-    [3.1.1 Purpose](#purpose)
+    3.1.1 Purpose
 
     3.1.2 Scope
 
