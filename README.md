@@ -1,26 +1,57 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
 
-January 18, 2017
+**Auto Vehicle**
+================
+
+by Khemar Bryan, Jan Yalda, Bilal Al-fanous
+-------------------------------------------
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Date: January 20, 2017
+----------------------
+
+ 
+
+Declaration of Sole Authorship
+==============================
+
+ 
+
+Approved Proposal
+=================
+
+ 
 
 *Proposal for the development of AutoVehicle*
 
-Prepared by [Khemar Bryan](khemar1.github.io), [Jan Yalda](janyalda.github.io),
-[Bilal Al-Fanous](bilfnous.github.io)  
+Prepared by Khemar Bryan, Jan Yalda, Bilal Al-Fanous    
 *Computer Engineering Technology Students*  
-
-
-**AutoVehicle**
-===============
+​
 
 Project Website : https://khemar1.github.io
 
  
 
-Table of Contents
------------------
+**Table of Contents**
+---------------------
 
 1.  [Executive Summary](#executive-summary)
 
@@ -191,6 +222,8 @@ important to start tasks as soon as possible to be able to meet deadlines.
 | *Duty*                                                                                    | *TBD*          |                                                                                                                                |
 | **Phase 3 Total**                                                                         | **TBD**        |                                                                                                                                |
 
+ 
+
 ### **Concluding remarks**
 
 This proposal presents a plan for providing an IoT solution for AutoVehicle This
@@ -198,8 +231,343 @@ is an opportunity to integrate the knowledge and skills developed in our program
 to create a collaborative IoT capstone project. I request approval of this
 project.
 
-### **References**
+ 
 
-[1] Institute of Electrical and Electronics Engineers. (2015, August 28). IEEE
-Xplore Digital Library [Online]. Available:
-https://ieeexplore.ieee.org/search/advsearch.jsp
+ 
+
+ 
+
+**Table of Contents**
+---------------------
+
+1.  [List of Illustrations](#1.-list-of-illustrations)
+
+2.  [Introduction](#2.-introduction)
+
+3.  [System Requirements Document](#system-requirements-document)
+
+    3.1 Introduction
+
+    [3.1.1 Purpose](#purpose)
+
+    3.1.2 Scope
+
+    3.1.3 Definitions
+
+    3.1.4 Overview
+
+    [3.2 Overall Description](#overall-description)
+
+    1.  Work Breakdown
+
+        -   [Database](#database)
+
+            -   [Web Interface](#web-interface)
+
+            -   [Hardware](#hardware)
+
+            -   [Mobile Application](#mobile-application)
+
+        1.  [Product Perspective](#product-perspective)
+
+        2.  [Product Functions](#product-functions)
+
+        3.  [User Characteristics](#user-characteristics)
+
+        4.  [Constraints, Assumptions and
+            Dependencies](#constraints,-assumptions-and-dependencies)
+
+    [3.3 Specific Requirements](#specific-requirements)
+
+    1.  External Interface Requirements
+
+        1.  Functional Requirements
+
+        2.  Performance Requirements
+
+        3.  Logical Database Requirements
+
+        4.  Software System Attributes
+
+    3.4 Testing
+
+4.  [Conclusion](#conclusion)
+
+5.  [Recommendation](#recommendation)
+
+6.  [References](#references)
+
+7.  Appendices
+
+ 
+
+ 
+
+ 
+
+**1. List of Illustrations**
+----------------------------
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+**2. Introduction**
+-------------------
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+**3. System Requirements Document**
+-----------------------------------
+
+ 
+
+### 3.1 Introduction
+
+This section will give an overall description of the requirements document.
+
+ 
+
+ 
+
+### 3.2 Overall Description
+
+The following section will have an overview of the whole system. The basic
+functionalities and how it interacts with the mobile application will be
+explained. Lastly the constraints and assumptions of the system will be
+discussed.
+
+ 
+
+**3.2.1 Work Breakdown**
+
+**Hardware**
+
+The Auto Vehicle’s chassis has all the hardware connected or mounted on it that
+operates together to achieve the functionalities that are required from it. The
+most important piece of hardware is the Raspberry PI 3, the microcomputer which
+has all the other hardware connected to in where it receives data from and send
+data to, it makes it possible to connect to the mobile application as well to
+send and receive data. The hardware that sends the data to the microcomputer are
+the Ultrasonic Sensors which are distance sensors, they are used to detect
+objects that may appear in front of the vehicle then send a signal to the
+microcomputer where it process it then manipulates the actuators according to
+the data that it received, the actuators are DC Motors used to move the vehicle,
+but before that the microcomputer actually sends data to the H-Bridge the driver
+which based on the data controls the DC Motors direction.
+
+(Developed by Jan Yalda)
+
+ 
+
+**Database**
+
+The system requires two databases, one will be used to store the users that have
+signed up to use the mobile application and another to store data of the mapped
+area. The mobile application user’s database is a MySQL database on a free
+hosting remote server, its main purpose is to store the information of users
+that sign up for the application. This information consists a username and an
+encrypted password which will allow the user enter the mobile application. The
+second database, which is still in development, will be used to receive data
+from the hardware while it is mapping an area. This data will be stored in the
+database which can be retrieved by the mobile application to display the mapped
+area to the user.
+
+ 
+
+**Web Interface**
+
+A website will be developed to allow the user can login to his account. Each
+specific user will be able to see their previous data been collected using the
+AutoVehicle. One section of the web site will have a small bio for the
+developers of the project and their contributions. Another page will contain a
+step by step explanation for those who may wish to recreate the project on their
+own. In addition to those, a section will be added to allow visitors give us
+feedback and suggestions on how we may improve the project.
+
+(Developed by Bilal Alfanous)
+
+ 
+
+**Mobile Application**
+
+The AutoVehicle Application is used to communicate with the autonomous vehicle
+remotely. It has in total 12 java classes which includes 6 activities. The
+functions of the activities are as follows: Login Activity is the first page the
+user will see when they open the application, it is where the user enters their
+information to get their user specific information which is stored in the
+database; MenuActivity is the page the user sees after they successfully login,
+they can now choose whether they want to control the car or retrieve a map; The
+register activity is where new users sign up with their information to be stored
+in the database. After registering users will be taken back to the login page;
+The remote control activity has a joystick which the user can use to control the
+car; the settings activity is where the user can enter the ip address of their
+car so that they can connect to it; the mapping activity is where the user can
+see the map that their car has made, it will be blank for new user. The app will
+work in unison with both the database and hardware to be fully functional. In
+addition to these various features, the application also has support for both
+English and French.
+
+(Developed by Khemar Bryan)
+
+ 
+
+ 
+
+**3.2.2 Product perspective**
+
+The system mainly consists of a mobile application which will be used to control
+the hardware as an RC car, the other use will be to start and stop the mapping
+functionality of the hardware and to view the mapped area.
+
+ 
+
+The mobile application has a login functionality which requires a user to be
+existing in the users database. The mobile application sends a request to the
+database to check if the user credentials provided matches one of the users that
+exists in the database then sends a response back to the mobile application
+which indicates if the user exists or not and therefore gives or denies access
+to the main functionalities of the application.
+
+ 
+
+After a successful login to the application has been made the two main
+functionalities are presented. First the functionality to use the Auto Vehicle
+as a remote controlled car, with this functionality the mobile application
+communicates with the hardware using the internet and sends commands to be
+received by the hardware and acted upon which are just basic remote control
+functionalities. The second functionality the mapping of an area communicates
+with the hardware the same way, it just orders the hardware to do the mapping
+functionality instead.
+
+ 
+
+**3.2.3 Product functions**
+
+Using the mobile application, users logged in will have two main choices on a
+menu first the remote control functionality and second the mapping
+functionality. When the users choose one of them they will be taken to the
+activity that is made for the functionality, where if its the users first time
+logging in gets an alert saying that an IP address is required which is the IP
+address of the Auto Vehicle, the user can just to add it right then or can
+ignore the alert and provide it another time.
+
+When an IP address is provided users going back to the two activities will have
+the ability to actually connect to the Auto Vehicle and start any functionality
+that they wish to perform.
+
+The remote control activity provides the users with the option to connect to the
+hardware using the connect button and start controlling it using the virtual joy
+stick provided in the remote control activity and finally when they no longer
+want to continue with this functionality they have the choice to disconnect from
+the hardware using the button provided.
+
+The mapping activity has the connect and disconnect buttons that have the same
+functionality as in the remote control activity, but it also has two other
+buttons one to start the mapping process and the other to stop it, when the stop
+button is click the mapped will be send from the hardware to the mobile
+application and displayed in this activity.
+
+ 
+
+**3.2.4 User characteristics**
+
+The system is mainly meant for the users of the mobile application to interact
+with. The only requirements are for the users that will use the application.
+
+The users can sign up or login to use the remote control and mapping
+functionalities. Where through the mobile application they can interact with the
+hardware send and receive data from it.
+
+ 
+
+**3.2.5 Constraints, assumptions and dependencies**
+
+The main constraint on the system is that its dependent on the internet for
+connection to be made to the database when the users want sign up or login,
+connection to the hardware to be able to access the functionalities is also
+dependent on the internet.
+
+Another constraint is that the mobile application is only available in two
+languages that are English and French, therefore users that don’t understand any
+of those two languages will not be able to use the application.
+
+An assumption about the system is that it will require the users to have a
+certain android API (API level 19 and above) as a minimum requirement to be able
+to get the mobile application on their smart phones, so users that have phones
+that don’t meet that requirement wont be able to get and use the mobile
+application.
+
+ 
+
+### 3.3 Specific Requirements
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+### 3.4 Testing
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+**4. Conclusion**
+-----------------
+
+ 
+
+ 
+
+**5. Recommendation**
+---------------------
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+-
+
+ 
+
+**6. References**
+-----------------
+
+ 
