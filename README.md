@@ -1,5 +1,5 @@
 ---
-csl: Desktop/apa.csl
+csl: apa.csl
 bibliography: AutoVehicleCitations.bib
 ---
 
