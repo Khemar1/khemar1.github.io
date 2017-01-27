@@ -1,6 +1,6 @@
 ---
-csl: ../../../../Desktop/apa.csl
-bibliography: ../../../RPiCitations.bib
+csl: Desktop/apa.csl
+bibliography: AutoVehicleCitations.bib
 ---
 
 **Auto Vehicle**
