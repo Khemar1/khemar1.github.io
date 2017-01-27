@@ -61,7 +61,7 @@ Project Website : https://khemar1.github.io
 
 4.  [Concluding Remarks](#concluding-remarks)
 
-5.  [References](#references)
+5.  [References](#9-references)
 
  
 
@@ -246,13 +246,13 @@ BODY
 
 3.  [Approved Proposal](#approved-proposal)
 
-4.  [List of Illustrations](#list-of-illustrations)
+4.  [List of Illustrations](#4-list-of-illustrations)
 
-5.  [Introduction](#5.-introduction)
+5.  [Introduction](#5-introduction)
 
-6.  [System Requirements Document](#3.-system-requirements-document)
+6.  [System Requirements Document](#6-system-requirements-document)
 
-    [6.1 Introduction](#6.1-introduction)
+    [6.1 Introduction](#61-introduction)
 
     6.1.1 Purpose
 
@@ -262,7 +262,7 @@ BODY
 
     6.1.4 Overview
 
-    [6.2 Overall Description](#overall-description)
+    [6.2 Overall Description](#62-overall-description)
 
     6.2.1 Work Breakdown
 
@@ -295,13 +295,13 @@ BODY
 
     6.3.5 Software System Attributes
 
-    6.4 Testing
+    [6.4 Testing](#64-testing)
 
-7.  [Conclusion](#conclusion)
+7.  [Conclusion](#7-conclusion)
 
-8.  [Recommendation](#recommendation)
+8.  [Recommendation](#8-recommendation)
 
-9.  [References](#references)
+9.  [References](#9-references)
 
 10. Appendices
 
