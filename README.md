@@ -258,36 +258,36 @@ project.
 
     [3.2 Overall Description](#overall-description)
 
-    1.  Work Breakdown
+    3.2.1 Work Breakdown
 
-        -   [Database](#database)
+    -   [Database](#database)
 
-            -   [Web Interface](#web-interface)
+        -   [Web Interface](#web-interface)
 
             -   [Hardware](#hardware)
 
             -   [Mobile Application](#mobile-application)
 
-        1.  [Product Perspective](#product-perspective)
+        3.2.2 [Product Perspective](#product-perspective)
 
-        2.  [Product Functions](#product-functions)
+        3.2.3 [Product Functions](#product-functions)
 
-        3.  [User Characteristics](#user-characteristics)
+        3.2.4 [User Characteristics](#user-characteristics)
 
-        4.  [Constraints, Assumptions and
-            Dependencies](#constraints,-assumptions-and-dependencies)
+        3.2.5 [Constraints, Assumptions and
+        Dependencies](#constraints,-assumptions-and-dependencies)
 
     [3.3 Specific Requirements](#specific-requirements)
 
-    1.  External Interface Requirements
+    3.3.1 External Interface Requirements
 
-        1.  Functional Requirements
+    3.3.2 Functional Requirements
 
-        2.  Performance Requirements
+    3.3.3 Performance Requirements
 
-        3.  Logical Database Requirements
+    3.3.4 Logical Database Requirements
 
-        4.  Software System Attributes
+    3.3.5 Software System Attributes
 
     3.4 Testing
 
@@ -392,6 +392,8 @@ second database, which is still in development, will be used to receive data
 from the hardware while it is mapping an area. This data will be stored in the
 database which can be retrieved by the mobile application to display the mapped
 area to the user.
+
+(Developed by Jan Yalda)
 
  
 
