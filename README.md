@@ -1,6 +1,6 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
 
 **Auto Vehicle**
@@ -30,8 +30,8 @@ Date: January 20, 2017
 
  
 
-Declaration of Sole Authorship
-==============================
+Declaration of Joint Authorship
+===============================
 
  
 
@@ -50,8 +50,8 @@ Project Website : https://khemar1.github.io
 
  
 
-**Table of Contents**
----------------------
+**Proposal Table of Contents**
+------------------------------
 
 1.  [Executive Summary](#executive-summary)
 
@@ -101,17 +101,17 @@ Subscribed Content” [1] and have found and read the following three articles
 which provides insight into similar efforts.
 
 -   Algorithm Fusion for Feature Extraction and Map Construction from SONAR
-    Data@7158986
+    Data[@7158986]
 
--   SLAM for robot navigation@4694832
+-   SLAM for robot navigation[@4694832]
 
 -   An Open-Source Scaled Automobile Platform for Fault-Tolerant Electronic
-    Stability Control@5398839
+    Stability Control[@5398839]
 
 In the Computer Engineering Technology program, we have learned about the
 following topics from the respective relevant courses:
 
--   Java Docs from CENG 212 Programming Techniques In Java,
+-   Java Docs from CENG 212 Programming Techniques In Java,[@7158986]
 
 -   Construction of circuits from CENG 215 Digital And Interfacing Systems,
 
@@ -240,72 +240,78 @@ BODY
 **Table of Contents**
 ---------------------
 
-1.  List of Illustrations
+1.  [Title Page](#auto-vehicle)
 
-2.  Introduction
+2.  [Declaration of Joint Authorship](#declaration-of-joint-authorship)
 
-3.  [System Requirements Document](#3.-system-requirements-document)
+3.  [Approved Proposal](#approved-proposal)
 
-    [3.1 Introduction](#3.1-introduction)
+4.  [List of Illustrations](#list-of-illustrations)
 
-    3.1.1 Purpose
+5.  [Introduction](#5.-introduction)
 
-    3.1.2 Scope
+6.  [System Requirements Document](#3.-system-requirements-document)
 
-    3.1.3 Definitions
+    [6.1 Introduction](#6.1-introduction)
 
-    3.1.4 Overview
+    6.1.1 Purpose
 
-    [3.2 Overall Description](#overall-description)
+    6.1.2 Scope
 
-    3.2.1 Work Breakdown
+    6.1.3 Definitions
+
+    6.1.4 Overview
+
+    [6.2 Overall Description](#overall-description)
+
+    6.2.1 Work Breakdown
 
     -   [Database](#database)
 
         -   [Web Interface](#web-interface)
 
-            -   [Hardware](#hardware)
+        -   [Hardware](#hardware)
 
-            -   [Mobile Application](#mobile-application)
+        -   [Mobile Application](#mobile-application)
 
-        3.2.2 [Product Perspective](#product-perspective)
+    6.2.2 [Product Perspective](#product-perspective)
 
-        3.2.3 [Product Functions](#product-functions)
+    6.2.3 [Product Functions](#product-functions)
 
-        3.2.4 [User Characteristics](#user-characteristics)
+    6.2.4 [User Characteristics](#user-characteristics)
 
-        3.2.5 [Constraints, Assumptions and
-        Dependencies](#constraints,-assumptions-and-dependencies)
+    6.2.5 [Constraints, Assumptions and
+    Dependencies](#constraints,-assumptions-and-dependencies)
 
-    [3.3 Specific Requirements](#specific-requirements)
+    [6.3 Specific Requirements](#specific-requirements)
 
-    3.3.1 External Interface Requirements
+    6.3.1 External Interface Requirements
 
-    3.3.2 Functional Requirements
+    6.3.2 Functional Requirements
 
-    3.3.3 Performance Requirements
+    6.3.3 Performance Requirements
 
-    3.3.4 Logical Database Requirements
+    6.3.4 Logical Database Requirements
 
-    3.3.5 Software System Attributes
+    6.3.5 Software System Attributes
 
-    3.4 Testing
+    6.4 Testing
 
-4.  [Conclusion](#conclusion)
+7.  [Conclusion](#conclusion)
 
-5.  [Recommendation](#recommendation)
+8.  [Recommendation](#recommendation)
 
-6.  [References](#references)
+9.  [References](#references)
 
-7.  Appendices
-
- 
+10. Appendices
 
  
 
  
 
-**1. List of Illustrations**
+ 
+
+**4. List of Illustrations**
 ----------------------------
 
  
@@ -324,7 +330,7 @@ BODY
 
  
 
-**2. Introduction**
+**5. Introduction**
 -------------------
 
  
@@ -337,12 +343,12 @@ BODY
 
  
 
-**3. System Requirements Document**
+**6. System Requirements Document**
 -----------------------------------
 
  
 
-### 3.1 Introduction
+### 6.1 Introduction
 
 This section will give an overall description of the requirements document.
 
@@ -350,7 +356,7 @@ This section will give an overall description of the requirements document.
 
  
 
-### 3.2 Overall Description
+### 6.2 Overall Description
 
 The following section will have an overview of the whole system. The basic
 functionalities and how it interacts with the mobile application will be
@@ -359,7 +365,7 @@ discussed.
 
  
 
-**3.2.1 Work Breakdown**
+**6​.2.1 Work Breakdown**
 
 **Hardware**
 
@@ -436,7 +442,7 @@ English and French.
 
  
 
-**3.2.2 Product perspective**
+**6.2.2 Product perspective**
 
 The system mainly consists of a mobile application which will be used to control
 the hardware as an RC car, the other use will be to start and stop the mapping
@@ -464,7 +470,7 @@ functionality instead.
 
  
 
-**3.2.3 Product functions**
+**6​.2.3 Product functions**
 
 Using the mobile application, users logged in will have two main choices on a
 menu first the remote control functionality and second the mapping
@@ -492,7 +498,7 @@ application and displayed in this activity.
 
  
 
-**3.2.4 User characteristics**
+**6​.2.4 User characteristics**
 
 The system is mainly meant for the users of the mobile application to interact
 with. The only requirements are for the users that will use the application.
@@ -503,7 +509,7 @@ hardware send and receive data from it.
 
  
 
-**3.2.5 Constraints, assumptions and dependencies**
+**6.2.5 Constraints, assumptions and dependencies**
 
 The main constraint on the system is that its dependent on the internet for
 connection to be made to the database when the users want sign up or login,
@@ -522,7 +528,7 @@ application.
 
  
 
-### 3.3 Specific Requirements
+### 6.3 Specific Requirements
 
  
 
@@ -534,7 +540,7 @@ application.
 
  
 
-### 3.4 Testing
+### 6.4 Testing
 
  
 
@@ -546,14 +552,14 @@ application.
 
  
 
-**4. Conclusion**
+**7. Conclusion**
 -----------------
 
  
 
  
 
-**5. Recommendation**
+**8. Recommendation**
 ---------------------
 
  
@@ -569,7 +575,7 @@ application.
 
  
 
-**6. References**
+**9. References**
 -----------------
 
  
