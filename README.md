@@ -33,6 +33,24 @@ Date: January 20, 2017
 Declaration of Joint Authorship
 ===============================
 
+We, Jan Yalda, Bilal Al-fanous & Khemar Bryan confirm that this work submitted
+for assessment is our own and is expressed in our own words. Our best effort was
+made to split this project equally. Jan Yalda worked on the hardware and
+database. Bilal Al-fanous worked on and maintained the web site. Khemar Bryan
+worked on the mobile application. We all collaborated to ensure that all parts
+of this project were able to connect and communicate with each other. All direct
+or indirect sources used are acknowledged as references.
+
+ 
+
+ 
+
+Co-Authors Signatures:
+
+ 
+
+Date:
+
  
 
 Approved Proposal
@@ -225,94 +243,107 @@ important to start tasks as soon as possible to be able to meet deadlines.
 
 ### **Concluding remarks**
 
-This proposal presents a plan for providing an IoT solution for AutoVehicle This
-is an opportunity to integrate the knowledge and skills developed in our program
-to create a collaborative IoT capstone project. I request approval of this
-project.
+This proposal presents a plan for providing an IoT solution for AutoVehicle.
+This is an opportunity to integrate the knowledge and skills developed in our
+program to create a collaborative IoT capstone project.
 
  
 
-BODY
-====
+Abstract
+========
+
+So far human controlled robots have been great; they are able to complete many
+tasks instructed by the user that's controlling them. As technology advances in
+our world we have learned that a new form of robotic programming has been
+developed to allow the robot to complete tasks on their own, independent of the
+user. Artificial Intelligence(AI) has enabled developers to create robots that
+are capable of operating on their own, making them even more useful and easier
+to operate. To have a robot that is able to independently map an unknown area
+would be great in many cases. One such case would be: if an area that a user
+wants to map is small or has a small entrance where they may not be able to
+physically enter, it is useful to have a small robot that can complete that task
+on its own and return a visual map of that area to the user. The Auto Vehicle
+has the ability to autonomously map an unknown area with the press of a button
+on the mobile application. It independently avoids obstacles in its path while
+always having the knowledge of its position in the unknown area. The vehicle
+will record the data in the form of coordinates to be sent to a database which
+can be retrieved by the mobile & web applications. The coordinates, when
+retrieved by the mobile application, will then be displayed in the form of a 2D
+map of the area.
 
  
 
 **Table of Contents**
 ---------------------
 
-1.  [Title Page](#auto-vehicle)
+[Title Page](#auto-vehicle)
 
-2.  [Declaration of Joint Authorship](#declaration-of-joint-authorship)
+[Declaration of Joint Authorship](#declaration-of-joint-authorship)
 
-3.  [Approved Proposal](#approved-proposal)
+[Approved Proposal](#approved-proposal)
 
-4.  [List of Illustrations](#4-list-of-illustrations)
+[Abstract](#abstract)
 
-5.  [Introduction](#5-introduction)
+[Table of Contents](#table-of-contents)
 
-6.  [System Requirements Document](#6-system-requirements-document)
+[List of Illustrations](#4-list-of-illustrations)
 
-    [6.1 Introduction](#61-introduction)
+1.  [Introduction](#5-introduction)
 
-    6.1.1 Purpose
+2.  [System Requirements Document](#6-system-requirements-document)
 
-    6.1.2 Scope
+    [2.1 Introduction](#introduction)
 
-    6.1.3 Definitions
+    2.1.1 Purpose
 
-    6.1.4 Overview
+    2.1.2 Scope
 
-    [6.2 Overall Description](#62-overall-description)
+    2.1.3 Definitions
 
-    6.2.1 Work Breakdown
+    2.1.4 Overview
 
-    -   [Database](#database)
+    [2.2 Overall Description](#82-overall-description)
+
+    [2.2.1 Work Breakdown](#821-work-breakdown)
+
+    -   [Hardware](#hardware)
+
+        -   [Database](#database)
 
         -   [Web Interface](#web-interface)
 
-        -   [Hardware](#hardware)
-
         -   [Mobile Application](#mobile-application)
 
-    6.2.2 [Product Perspective](#product-perspective)
+    [2.2.2 Product Perspective](#822-product-perspective)
 
-    6.2.3 [Product Functions](#product-functions)
+    [2.2.3 Product Functions](#823-product-functions)
 
-    6.2.4 [User Characteristics](#user-characteristics)
+    2.2.4 [User Characteristics](#824-user-characteristics)
 
-    6.2.5 [Constraints, Assumptions and
-    Dependencies](#constraints,-assumptions-and-dependencies)
+    2.2.5 [Constraints, Assumptions and
+    Dependencies](#825-constraints-assumptions-and-dependencies)
 
-    [6.3 Specific Requirements](#specific-requirements)
+    [2.3 Specific Requirements](#83-specific-requirements)
 
-    6.3.1 External Interface Requirements
+    2.3.1 External Interface Requirements
 
-    6.3.2 Functional Requirements
+    2.3.2 Functional Requirements
 
-    6.3.3 Performance Requirements
+    2.3.3 Performance Requirements
 
-    6.3.4 Logical Database Requirements
+    2.3.4 Logical Database Requirements
 
-    6.3.5 Software System Attributes
+    2.3.5 Software System Attributes
 
-    [6.4 Testing](#64-testing)
+    [2.4 Testing](#84-testing)
 
-7.  [Conclusion](#7-conclusion)
+3.  [Conclusion](#conclusion)
 
-8.  [Recommendation](#8-recommendation)
+4.  [Recommendation](#recommendation)
 
-9.  [References](#9-references)
+5.  [References](#references)
 
-10. Appendices
-
- 
-
- 
-
- 
-
-**4. List of Illustrations**
-----------------------------
+6.  Appendices
 
  
 
@@ -320,18 +351,8 @@ BODY
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
-**5. Introduction**
--------------------
+**List of Illustrations**
+-------------------------
 
  
 
@@ -343,12 +364,39 @@ BODY
 
  
 
-**6. System Requirements Document**
------------------------------------
+ 
 
  
 
-### 6.1 Introduction
+ 
+
+**Introduction**
+----------------
+
+There are numerous areas such as: mines and sewer systems which are beyond the
+reach of humans. These areas may either be too rigid or have entrances that may
+be too small for an average sized person to reach. This report describes the
+process followed for the design and utilization of an autonomous vehicle with
+the ability to map areas that may represent an inconvenience for humans to
+enter. The autonomous vehicle in question will be unmanned and will use
+ultrasonic sensors to navigate and record coordinates in an area which will be
+sent to a database. This database can then be retrieved by web and mobile
+applications to display a map of the area. The information presented will be
+centered on the design of the autonomous vehicle in addition to the mapping
+algorithm which it will implement.
+
+ 
+
+ 
+
+ 
+
+**System Requirements Document**
+--------------------------------
+
+ 
+
+### 2.1 Introduction
 
 This section will give an overall description of the requirements document.
 
@@ -356,7 +404,7 @@ This section will give an overall description of the requirements document.
 
  
 
-### 6.2 Overall Description
+### 2.2 Overall Description
 
 The following section will have an overview of the whole system. The basic
 functionalities and how it interacts with the mobile application will be
@@ -365,9 +413,13 @@ discussed.
 
  
 
-**6​.2.1 Work Breakdown**
+### **2​.2.1 Work Breakdown**
 
-**Hardware**
+ 
+
+### **Hardware**
+
+ 
 
 The Auto Vehicle’s chassis has all the hardware connected or mounted on it that
 operates together to achieve the functionalities that are required from it. The
@@ -386,7 +438,9 @@ which based on the data controls the DC Motors direction.
 
  
 
-**Database**
+### **Database**
+
+ 
 
 The system requires two databases, one will be used to store the users that have
 signed up to use the mobile application and another to store data of the mapped
@@ -403,7 +457,9 @@ area to the user.
 
  
 
-**Web Interface**
+### **Web Interface**
+
+ 
 
 A website will be developed to allow the user can login to his account. Each
 specific user will be able to see their previous data been collected using the
@@ -417,7 +473,9 @@ feedback and suggestions on how we may improve the project.
 
  
 
-**Mobile Application**
+### **Mobile Application**
+
+ 
 
 The AutoVehicle Application is used to communicate with the autonomous vehicle
 remotely. It has in total 12 java classes which includes 6 activities. The
@@ -442,7 +500,9 @@ English and French.
 
  
 
-**6.2.2 Product perspective**
+### **2.2.2 Product perspective**
+
+ 
 
 The system mainly consists of a mobile application which will be used to control
 the hardware as an RC car, the other use will be to start and stop the mapping
@@ -470,7 +530,9 @@ functionality instead.
 
  
 
-**6​.2.3 Product functions**
+### **2​.2.3 Product functions**
+
+ 
 
 Using the mobile application, users logged in will have two main choices on a
 menu first the remote control functionality and second the mapping
@@ -498,7 +560,9 @@ application and displayed in this activity.
 
  
 
-**6​.2.4 User characteristics**
+### **2.2.4 User characteristics**
+
+ 
 
 The system is mainly meant for the users of the mobile application to interact
 with. The only requirements are for the users that will use the application.
@@ -509,7 +573,9 @@ hardware send and receive data from it.
 
  
 
-**6.2.5 Constraints, assumptions and dependencies**
+### **2​.2.5 Constraints, assumptions and dependencies**
+
+ 
 
 The main constraint on the system is that its dependent on the internet for
 connection to be made to the database when the users want sign up or login,
@@ -528,7 +594,7 @@ application.
 
  
 
-### 6.3 Specific Requirements
+### 2.3 Specific Requirements
 
  
 
@@ -540,7 +606,7 @@ application.
 
  
 
-### 6.4 Testing
+### 2.4 Testing
 
  
 
@@ -552,15 +618,15 @@ application.
 
  
 
-**7. Conclusion**
------------------
+**Conclusion**
+--------------
 
  
 
  
 
-**8. Recommendation**
----------------------
+**Recommendation**
+------------------
 
  
 
@@ -575,7 +641,7 @@ application.
 
  
 
-**9. References**
------------------
+**References**
+--------------
 
  
