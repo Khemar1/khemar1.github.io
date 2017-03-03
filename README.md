@@ -1,6 +1,6 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
 
 **Auto Vehicle**
@@ -295,9 +295,9 @@ map of the area.
 
     2.1.4 Overview
 
-    [2.2 Overall Description](#82-overall-description)
+    [2.2 Overall Description](#22-overall-description)
 
-    [2.2.1 Work Breakdown](#821-work-breakdown)
+    [2.2.1 Work Breakdown](#221-work-breakdown)
 
     -   [Hardware](#hardware)
 
@@ -307,14 +307,14 @@ map of the area.
 
     -   [Mobile Application](#mobile-application)
 
-    [2.2.2 Product Perspective](#822-product-perspective)
+    [2.2.2 Product Perspective](#222-product-perspective)
 
-    [2.2.3 Product Functions](#823-product-functions)
+    [2.2.3 Product Functions](#223-product-functions)
 
-    2.2.4 [User Characteristics](#824-user-characteristics)
+    [2.2.4 User Characteristics](#224-user-characteristics)
 
-    2.2.5 [Constraints, Assumptions and
-    Dependencies](#825-constraints-assumptions-and-dependencies)
+    [2.2.5 Constraints, Assumptions and
+    Dependencies](#225-constraints-assumptions-and-dependencies)
 
     [2.3 Build Instructions](#23-bulid-instructions)
 
@@ -348,7 +348,7 @@ map of the area.
 
     2.4.5 Software System Attributes
 
-    2.5 Progress Reports
+    [2.5 Progress Reports](#25-progress-reports)
 
     -   [February 3, 2017](#february-3-2017)
 
@@ -625,11 +625,14 @@ application.
 
 #### **2.3.1 Introduction**
 
-This section will give detailed instructions on how to recreate the project.
+This content of this section will give detailed instructions on how to recreate
+the project.
 
  
 
 #### **2.3.2 Time Commitment**
+
+ 
 
 Approximate time for project completion : 1 year
 
@@ -645,8 +648,6 @@ Amount of hours required per week: 6 hours
 
  
 
-#### **2.3.4 System Diagram**
-
 | *Item*                                   | *Cost(Before Tax)* | *Tax*    | *Cost(After Tax)* |
 |------------------------------------------|--------------------|----------|-------------------|
 | Raspberry Pi Kit                         | \$ 99.99           | \$ 13.00 | \$ 112.99         |
@@ -661,9 +662,9 @@ Amount of hours required per week: 6 hours
 
  
 
-####  
+#### **2.3.4 System Diagram**
 
- 
+![](system diagram.png)
 
  
 
@@ -717,6 +718,10 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 
 -   And finally place the sensor circuit somewhere on the edge of the chassis so
     nothing will be interfering with the sensors like the wires.
+
+![](pcblayout.png)
+
+![](boardschematic.png)
 
  
 
