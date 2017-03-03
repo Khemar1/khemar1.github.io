@@ -1,13 +1,12 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
 
 **Auto Vehicle**
 ================
 
 by Khemar Bryan, Jan Yalda, Bilal Al-fanous
--------------------------------------------
 
  
 
@@ -26,12 +25,11 @@ by Khemar Bryan, Jan Yalda, Bilal Al-fanous
  
 
 Date: January 20, 2017
-----------------------
 
  
 
 Declaration of Joint Authorship
-===============================
+-------------------------------
 
 We, Jan Yalda, Bilal Al-fanous & Khemar Bryan confirm that this work submitted
 for assessment is our own and is expressed in our own words. Our best effort was
@@ -45,16 +43,12 @@ or indirect sources used are acknowledged as references.
 
  
 
-Co-Authors Signatures:
-
- 
-
 Date:
 
  
 
 Approved Proposal
-=================
+-----------------
 
  
 
@@ -68,8 +62,7 @@ Project Website : https://khemar1.github.io
 
  
 
-**Proposal Table of Contents**
-------------------------------
+### **Proposal Table of Contents**
 
 1.  [Executive Summary](#executive-summary)
 
@@ -250,7 +243,7 @@ program to create a collaborative IoT capstone project.
  
 
 Abstract
-========
+--------
 
 So far human controlled robots have been great; they are able to complete many
 tasks instructed by the user that's controlling them. As technology advances in
@@ -308,11 +301,11 @@ map of the area.
 
     -   [Hardware](#hardware)
 
-        -   [Database](#database)
+    -   [Database](#database)
 
-        -   [Web Interface](#web-interface)
+    -   [Web Interface](#web-interface)
 
-        -   [Mobile Application](#mobile-application)
+    -   [Mobile Application](#mobile-application)
 
     [2.2.2 Product Perspective](#822-product-perspective)
 
@@ -323,19 +316,51 @@ map of the area.
     2.2.5 [Constraints, Assumptions and
     Dependencies](#825-constraints-assumptions-and-dependencies)
 
-    [2.3 Specific Requirements](#83-specific-requirements)
+    [2.3 Build Instructions](#23-bulid-instructions)
 
-    2.3.1 External Interface Requirements
+    [2.3.1 Introduction](#231-introduction)
 
-    2.3.2 Functional Requirements
+    [2.3.2 Time  Commitment](#232-time-commitment)
 
-    2.3.3 Performance Requirements
+    [2.3.3 Budget](#233-budget)
 
-    2.3.4 Logical Database Requirements
+    [2.3.4 System Diagram](#234-system-diagram)
 
-    2.3.5 Software System Attributes
+    [2.3.5 Mechanical Assembly](#235-mechanical-assembly)
 
-    [2.4 Testing](#84-testing)
+    [2.3.6 PCB/Soldering](#236-pcb-soldering)
+
+    [2.3.7 Power Up](#237-power-up)
+
+    -   [Powering Up PCB](#powering-up-pcb)
+
+    -   [Powering Up Car](#powering-up-car)
+
+    [2.4 Specific Requirements](#83-specific-requirements)
+
+    2.4.1 External Interface Requirements
+
+    2.4.2 Functional Requirements
+
+    2.4.3 Performance Requirements
+
+    2.4.4 Logical Database Requirements
+
+    2.4.5 Software System Attributes
+
+    2.5 Progress Reports
+
+    -   [February 3, 2017](#february-3-2017)
+
+    -   [February 17, 2017](#february-17-2017)
+
+    [2.6 Testing](#26-testing)
+
+    [2.6.1 Unit Testing](#unit-testing)
+
+    [2.6.2 Product Testing](#product-testing)
+
+     
 
 3.  [Conclusion](#conclusion)
 
@@ -413,11 +438,11 @@ discussed.
 
  
 
-### **2​.2.1 Work Breakdown**
+#### **2​.2.1 Work Breakdown**
 
  
 
-### **Hardware**
+##### **Hardware**
 
  
 
@@ -438,7 +463,7 @@ which based on the data controls the DC Motors direction.
 
  
 
-### **Database**
+##### **Database**
 
  
 
@@ -457,7 +482,7 @@ area to the user.
 
  
 
-### **Web Interface**
+##### **Web Interface**
 
  
 
@@ -473,7 +498,7 @@ feedback and suggestions on how we may improve the project.
 
  
 
-### **Mobile Application**
+##### **Mobile Application**
 
  
 
@@ -500,7 +525,7 @@ English and French.
 
  
 
-### **2.2.2 Product perspective**
+#### **2.2.2 Product perspective**
 
  
 
@@ -530,7 +555,7 @@ functionality instead.
 
  
 
-### **2​.2.3 Product functions**
+#### **2​.2.3 Product functions**
 
  
 
@@ -560,7 +585,7 @@ application and displayed in this activity.
 
  
 
-### **2.2.4 User characteristics**
+#### **2.2.4 User characteristics**
 
  
 
@@ -573,7 +598,7 @@ hardware send and receive data from it.
 
  
 
-### **2​.2.5 Constraints, assumptions and dependencies**
+#### **2​.2.5 Constraints, assumptions and dependencies**
 
  
 
@@ -594,7 +619,189 @@ application.
 
  
 
-### 2.3 Specific Requirements
+### **2.3 Build Instructions**
+
+ 
+
+#### **2.3.1 Introduction**
+
+This section will give detailed instructions on how to recreate the project.
+
+ 
+
+#### **2.3.2 Time Commitment**
+
+Approximate time for project completion : 1 year
+
+Time required for Phase 1 : 12 weeks
+
+Time required for Phase 2: 10 weeks
+
+Amount of hours required per week: 6 hours
+
+ 
+
+#### **2.3.3 Budget**
+
+ 
+
+#### **2.3.4 System Diagram**
+
+| *Item*                                   | *Cost(Before Tax)* | *Tax*    | *Cost(After Tax)* |
+|------------------------------------------|--------------------|----------|-------------------|
+| Raspberry Pi Kit                         | \$ 99.99           | \$ 13.00 | \$ 112.99         |
+| Hwydo 4WD Robot Smart Car Chassis        | \$ 38.00           | \$ 4.94  | \$ 42.94          |
+| Energizer Max AA Batteries               | \$ 4.97            | \$ 0.65  | \$ 5.62           |
+| HC-SR04 Ultrasonic Sensors (x2*)*        | \$ 4.99            | \$ 0.65  | \$ 5.64           |
+| 6“ Male to Male Jumper Wires (x10*)*     | \$ 2.97            | \$ 0.39  | \$ 3.36           |
+| 6” Male to Female Jumper Wires (x10*)*   | \$ 2.98            | \$ 0.39  | \$ 3.37           |
+| 6” Female to Female Jumper Wires (x10*)* | \$ 2.99            | \$ 0.39  | \$ 3.38           |
+| L298 Dual Motor Driver-2A                | \$ 14.00           | \$ 1.82  | \$ 15.82          |
+| **Total**                                | \$ 170.89          |          | \$ 193.11         |
+
+ 
+
+####  
+
+ 
+
+ 
+
+#### **2.3.5 Mechanical Assembly**
+
+To start unbox all the parts that come in the 4WD chassis kit then start by:
+
+-   Putting the motor mounts on the chassis
+
+-   Putting the actual motors on to the mounts
+
+-   Putting the standoffs on the bottom chassis layer
+
+-   Then screwing the top layer to the standoffs
+
+-   Finally attach all the tires to the motors
+
+-   Then find good spots on the chassis to mount the raspberry pi, sensor
+    circuit which is on a bread board and the H-driver
+
+-   Place the H-driver in a position close to the motors
+
+-   To connect the H-Driver to the motors, follow these steps:
+
+    -   Loosen the screws on the OUT ports (OUT1, OUT2, OUT3, OUT4)
+
+    -   Put the red and black leads from the right motors of the car into OUT2
+        and OUT1 respectively then tighten the screws.
+
+    -   Place the red and black wires from the left side into OUT4 and OUT3
+        respectively then tighten the screws.
+
+-   After the H-driver is connected to the motors you must now connect the
+    driver to the raspberry pi and the power supply
+
+    -   Loosen the screws on the 5V, round and VCC ports
+
+    -   Take the red lead from the power supply and place it into the VCC port
+        then take the black lead and push it into the ground port. Tighten the
+        screws on the VCC port but leave the ground port open for now
+
+    -   a male to female wire and plug the header onto pin 2 on your raspberry
+        pi (this is the 5V out pin) then push the male head into the 5V port on
+        the motor driver.
+
+    -   Using another male to female wire, plug the header onto pin 6 on the
+        raspberry pi and push the male head into the ground port on the motor
+        driver.
+
+    -   You can now tighten the screws on the 5V and ground ports
+
+-   And finally place the sensor circuit somewhere on the edge of the chassis so
+    nothing will be interfering with the sensors like the wires.
+
+ 
+
+#### **2.3.6 PCB/Soldering**
+
+Soldering onto the PCB is a simple task that even beginners can carry out but it
+is recommended that you have at least basic knowledge of circuitry. Practice
+before you solder onto your pcb to minimize mistakes
+
+**Step 1**
+
+Get a soldering iron, a PCB holder and some solder.
+
+**Step 2**
+
+Place the PCB into the PCB holder and plug the soldering iron in to heat it up
+
+**Step 3**
+
+When the LED on the soldering iron has turned green this means you can begin
+soldering
+
+Start by cleaning the putting some solder onto the iron and wipe it off on a
+sponge (this is done to clean the iron)
+
+**Step 4**
+
+Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
+TO FOLLOW SCHEMATIC)
+
+ 
+
+#### **2.3.7 Power Up**
+
+In this phase, you will be powering up your car and PCB(if you chose to use one)
+
+ 
+
+##### Powering up the PCB
+
+-   The raspberrypi by default comes loaded with an OS but it is recommended you
+    reinstall it
+
+-   Format the SD card then use http://sourceforge.net/projects/win32diskimager/
+    to write the image file
+    https://downloads.raspberrypi.org/raspbian/images/raspbian-2016-09-28/2016-09-23-raspbian-jessie.zip
+    onto it.
+
+-   Using the HDMI cable from the rapsberrypi kit connect the pi to a monitor
+
+-   Using an Ethernet cable connect the pi to a source of internet.(or use wifi)
+
+-   Put the sd card into your raspberrypi and power it on.
+
+-   When the raspberry pi is powered on look for the ip address (hover cursor
+    over internet icon or use ifconifg in the terminal)
+
+-   Open remote pc, enter the ip address and connect to the pi.
+
+-   Go to the six0four.github.io repository and look in the
+    ModularSenseHatStripped folder for a file called traffic 2B.c. Download the
+    file to your desktop.
+
+-   Put the PCB header onto the raspberry pi’s pins
+
+-   Go to the terminal and run the traffic 2B.c program, the LED’s on the PCB
+    should now start changing colours.
+
+ 
+
+##### Powering up the Car
+
+-   Put the batteries into the battery holder
+
+-   If the H Drive is receiving power from the batteries the LED should
+    illuminate
+
+-   Remove one of the batteries from the battery holder to turn of the motors as
+    you will need to test if the raspberry pi is powering the motor driver
+
+-   Plug in the raspberry pi and the LED on the motor driver should illuminate
+    once again
+
+-   Now put the batteries back into the battery holder and all components should
+    be powered up
 
  
 
@@ -602,13 +809,246 @@ application.
 
  
 
- 
+### 2.4 Specific Requirements
 
  
 
-### 2.4 Testing
+ 
+
+### 2.5 Progress Reports
 
  
+
+#### *February 3, 2017*
+
+**Status Summary**
+
+With the remote-control part of the project completed we are now focused on the
+mapping functionality and making adjustments to improve the hardware and the
+software sides of the project. The android application is being modified to
+prevent crashing when an incorrect IP address is entered and ways of
+implementing the mapping functionality is being viewed to have a better
+understanding of how it works.  
+
+ 
+
+**Project Overview**  
+The mapping functionality is still in the research phase.  
+The android application is being modified to prevent crashing and incorporate
+Bluetooth connectivity.
+
+The web site is under development.
+
+**Problems and Opportunities**
+
+Mapping is a very hard concept to comprehend and implement. We’ve gathered
+information from various sources which mainly include complex algorithms on how
+to do it but we’re not quite sure how we can use it. This provides us with the
+opportunity to collaborate with someone who has experience with robotic mapping.
+
+ 
+
+During the last semester, we used a WiFi/Internet connection to communicate with
+the car. This worked well from our homes but connecting to an enterprise
+WiFi proved to be an issue. This has provided us the opportunity to learn about
+Bluetooth connectivity and how we can incorporate that into our project.
+
+**Budget Overview**
+
+No changes to the budget thus far, we haven’t had to add anything to the
+project.
+
+ 
+
+**Conclusions **
+
+Overall the project is still in development. Our goals for this month are to
+prevent the application from crashing, understand and implement the mapping
+functionality and have a skeleton for the website.
+
+ 
+
+#### *February 17, 2017*
+
+**Status Summary**
+
+This week we met with our collaborator to discuss our options, as it relates to
+mapping. After meeting with the collaborator new solutions were introduced, and
+his ideas were taken into consideration. The rest of our time was focused on
+enabling connectivity on our car. A solution has been found to connect the
+vehicles to enterprise Wi-Fi. Project website started to take its overall design
+and outlines.
+
+ 
+
+**Project Overview**
+
+The mapping functionality is still in the research phase but will now see some
+progress after we take into consideration the options brought to us by our
+collaborator. The Bluetooth feature for now will be on hold, as we’ve found a
+solution for the Wi-Fi connectivity. The main page of the website is being coded
+and the final outline of the website is taking shape.
+
+ 
+
+**Problems and opportunities**
+
+Jan: A meeting with a collaborator in the mapping field took place, and some
+very interesting ideas were introduced. An electronic peripheral might be used,
+such as IMU to enable us to sense angles. Another solution known as the flood
+fill algorithm, is also being considered along with other ideas to do door
+mapping.
+
+Khemar & Jan: Bluetooth proved to be a strenuous task and it will be on hold for
+the time being. While working on the Bluetooth functionality the Wi-Fi
+connectivity aspect was fixed in the application. In addition to that, a
+solution to our enterprise Wi-Fi issue was found by Jan. Moving forward, Wi-Fi
+will be our main way of connectivity until we learn more about Bluetooth.
+
+Bilal: Website development has been going smoothly up to now, and there is not
+any major problem that worth mentioning, the major development was on the
+skeleton and overall design of the website.
+
+Link for AutoVehicle's website:
+
+www.munro.humber.ca/\~n00994056/index.html
+
+ 
+
+**Budget Overview                     **
+
+After meeting with the mapping collaborator, we may have to adjust our budget.
+Among other things, we have taken into consideration an IMU, which should cost
+around 50\$.
+
+ 
+
+**Conclusion**
+
+Overall, there has been major progress in regards to the connectivity aspect of
+the project, our goals have been met for this month with the app no longer
+crashing when and invalid IP address is entered. We now have a clear idea of the
+options we have to aid us in creating mapping functionality. The general outline
+of the website has been shaped and for the next month the website will continue
+to be in development, some initial mapping code and testing should take place.  
+
+ 
+
+ 
+
+### 2.6 Testing
+
+ 
+
+#### **Unit Testing**
+
+*Testing the H Drive & Battery Power Up*
+
+Place the batteries into battery holder and the LED should turn on and shine red
+
+ 
+
+*Testing H Drive & Raspberry Pi Power Up*
+
+Plug the raspberry pi into a power source and the LED should turn on.
+
+ 
+
+*Testing Raspberry Pi*
+
+-   Plug the raspberry pi into a power source and connect it to a monitor.
+
+-   You should be greeted by a screen asking you to enter your login information
+
+-   If you haven’t made any modifications then the default credentials are
+    Username: pi Password: raspberry
+
+-   Open the browser and go to any website
+
+    If the pi is connected to internet you should have no problem
+
+*Testing the motors*
+
+-   Ensure all connections are made according to the build instructions
+
+-   Power up the raspberry pi and login
+
+-   Download [fwdback.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/fwdback.py)
+
+-   Go to your terminal and go to the directory where you downloaded fwback.py
+
+-   Run the program using sudo python fwdback.py
+
+-   If all connections were made correctly then the wheels should move forward
+    and backward
+
+ 
+
+*Testing the sensors*
+
+-   To test the sensor the steps are similar to that of the motors.
+
+-   Power up the raspberry pi and login
+
+-   Download [sensor2.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/sensor2.py)
+
+-   Open your terminal and go into the directory where you downloaded the
+    program
+
+-   Run the program using sensor2.py
+
+-   Place an object in front of the sensor and it should return the distance of
+    the object to the screen.
+
+ 
+
+#### **Product Testing**
+
+When unit testing has been complete and all problems resolved, you can now test
+the car as a whole. Follow these steps to test that all components work
+together:
+
+-   Power up the raspberry pi
+
+-   Put in the batteries
+
+-   Connect the raspberry pi to a monitor or use remote pc to view the desktop
+
+-   Login to the raspberry pi
+
+-   Download [auto1.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/auto1.py)
+
+-   Elevate the car so that it isn’t touching the ground (You can place it on
+    top of something)
+
+-   Go to your terminal and navigate to where you downloaded auto1.py
+
+-   Run the program using sudo python auto1.py
+
+-   The wheels should move forward continuously
+
+-   Wave your hand in front of the sensors and the wheels should change
+    direction
+
+You can further test the car by placing it in an open area and watching it go
+
+-   Follow the previous steps but use remote pc to connect instead of using a
+    monitor. This is important because you want the car to move freely
+
+-   Place the car in the open area
+
+-   Run the program again
+
+-   The car should move forward continuously
+
+-   When the car senses an obstacle it should reverse and change
+    direction(whether it be left or right. This is choses randomly by the
+    program)
+
+-   If it senses an obstacle in the direction it turned to then it will turn
+    once again.
+
+-   The car will continuously do this until it cannot find a path to continue
 
  
 
@@ -625,19 +1065,12 @@ application.
 
  
 
+ 
+
 **Recommendation**
 ------------------
 
  
-
- 
-
- 
-
- 
-
- 
--
 
  
 
