@@ -336,7 +336,7 @@ map of the area.
 
     -   [Powering Up Car](#powering-up-car)
 
-    [2.4 Specific Requirements](#83-specific-requirements)
+    [2.4 Specific Requirements](#24-specific-requirements)
 
     2.4.1 External Interface Requirements
 
