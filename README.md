@@ -664,7 +664,7 @@ Amount of hours required per week: 6 hours
 
 #### **2.3.4 System Diagram**
 
-![](system diagram.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/system%20diagram.png)
 
  
 
@@ -719,9 +719,9 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 -   And finally place the sensor circuit somewhere on the edge of the chassis so
     nothing will be interfering with the sensors like the wires.
 
-![](pcblayout.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pcblayout.png)
 
-![](boardschematic.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/boardschematic.png)
 
  
 
