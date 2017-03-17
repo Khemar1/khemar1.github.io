@@ -1,6 +1,6 @@
 ---
 csl: apa.csl
-bibliography: RPiCitations.bib
+bibliography: AutoVehicleCitations.bib
 ---
 
 \\pagebreak
