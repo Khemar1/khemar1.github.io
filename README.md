@@ -27,8 +27,8 @@ by Khemar Bryan, Jan Yalda, Bilal Al-fanous
 Date: January 20, 2017
 
  
-\pagebreak
-Declaration of Joint Authorship
+
+***Declaration of Joint Authorship
 -------------------------------
 
 We, Jan Yalda, Bilal Al-fanous & Khemar Bryan confirm that this work submitted
