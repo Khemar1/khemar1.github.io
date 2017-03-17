@@ -1,6 +1,6 @@
 ---
-csl: ../../../../Desktop/apa.csl
-bibliography: ../../../RPiCitations.bib
+csl: apa.csl
+bibliography: RPiCitations.bib
 ---
 
 \\pagebreak
