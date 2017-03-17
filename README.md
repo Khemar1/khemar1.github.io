@@ -1,10 +1,16 @@
 ---
-csl: apa.csl
-bibliography: AutoVehicleCitations.bib
+csl: ../../../../Desktop/apa.csl
+bibliography: ../../../RPiCitations.bib
 ---
+
+\\pagebreak
+
+\\begin{center}
 
 **Auto Vehicle**
 ================
+
+\\end{center}
 
 by Khemar Bryan, Jan Yalda, Bilal Al-fanous
 
@@ -27,6 +33,8 @@ by Khemar Bryan, Jan Yalda, Bilal Al-fanous
 Date: January 20, 2017
 
  
+
+\\pagebreak
 
 Declaration of Joint Authorship
 -------------------------------
@@ -58,7 +66,7 @@ Prepared by Khemar Bryan, Jan Yalda, Bilal Al-Fanous  
 *Computer Engineering Technology Students*  
 ​
 
-Project Website : https://khemar1.github.io
+Project Website : [https://khemar1.github.io](https://khemar1.github.io)
 
  
 
@@ -240,8 +248,6 @@ This proposal presents a plan for providing an IoT solution for AutoVehicle.
 This is an opportunity to integrate the knowledge and skills developed in our
 program to create a collaborative IoT capstone project.
 
- 
-
 Abstract
 --------
 
@@ -264,8 +270,6 @@ can be retrieved by the mobile & web applications. The coordinates, when
 retrieved by the mobile application, will then be displayed in the form of a 2D
 map of the area.
 
- 
-
 **Table of Contents**
 ---------------------
 
@@ -287,13 +291,11 @@ map of the area.
 
     [2.1 Introduction](#introduction)
 
-    2.1.1 Purpose
+    [2.1.1 Purpose](#211-purpose)
 
-    2.1.2 Scope
+    [2.1.2 Definitions](#212-definitions)
 
-    2.1.3 Definitions
-
-    2.1.4 Overview
+    [2.1.3 Overview](#213-overview)
 
     [2.2 Overall Description](#22-overall-description)
 
@@ -320,7 +322,7 @@ map of the area.
 
     [2.3.1 Introduction](#231-introduction)
 
-    [2.3.2 Time  Commitment](#232-time-commitment)
+    [2.3.2 Time Commitment](#232-time-commitment)
 
     [2.3.3 Budget](#233-budget)
 
@@ -336,7 +338,7 @@ map of the area.
 
     -   [Powering Up Car](#powering-up-car)
 
-    [2.4 Specific Requirements](#24-specific-requirements)
+    [2.4 Specific Requirements](#83-specific-requirements)
 
     2.4.1 External Interface Requirements
 
@@ -362,11 +364,11 @@ map of the area.
 
      
 
-3.  [Conclusion](#conclusion)
+3.  [Conclusion](#3-conclusion)
 
-4.  [Recommendation](#recommendation)
+4.  [Recommendation](#4-recommendation)
 
-5.  [References](#references)
+5.  [References](#5-references)
 
 6.  Appendices
 
@@ -374,12 +376,8 @@ map of the area.
 
  
 
- 
-
 **List of Illustrations**
 -------------------------
-
- 
 
  
 
@@ -403,14 +401,16 @@ reach of humans. These areas may either be too rigid or have entrances that may
 be too small for an average sized person to reach. This report describes the
 process followed for the design and utilization of an autonomous vehicle with
 the ability to map areas that may represent an inconvenience for humans to
-enter. The autonomous vehicle in question will be unmanned and will use
+enter. The autonomous vehicle in question will be fully autonomous and will use
 ultrasonic sensors to navigate and record coordinates in an area which will be
-sent to a database. This database can then be retrieved by web and mobile
-applications to display a map of the area. The information presented will be
-centered on the design of the autonomous vehicle in addition to the mapping
-algorithm which it will implement.
-
- 
+sent to a database. This database can then be retrieved by website to display
+them to specific users when they log in. The mobile application will retrieve
+the coordinates from the database in addition to a drawn map of the area which
+it will be able to display to the user. The application will also be able to
+remotely control the car through the usage of an onscreen joystick, through a
+Bluetooth or WiFi connection. The information presented will be centered on the
+design of the autonomous vehicle in addition to the mapping algorithm which it
+will implement.
 
  
 
@@ -423,9 +423,38 @@ algorithm which it will implement.
 
 ### 2.1 Introduction
 
-This section will give an overall description of the requirements document.
+ 
+
+#### **2.1.1 Purpose**
+
+The purpose of this small scale vehicle is to be able to autonomously navigate
+and map an area. Autonomous vehicles are the current trend in technology and
+this vehicle will be allow a user to make a map of an area without having to
+physically carry out the task.
 
  
+
+#### **2.1.2 Definitions**
+
+An autonomous vehicle is a vehicle that is capable of sensing its environment
+and navigation without human input \*add citation
+
+ 
+
+#### **2.1.3 Overview**
+
+This vehicle is made using a combination of Raspberry Pi 3, Ultrasonic sensors,
+and a motor driver. These components are built onto smart car chassis which will
+be used to move. The ultrasonic sensors are used to detect obstacles and send
+the information back to the raspberry pi.
+
+ 
+
+2.1.4 Target Audience
+
+The target audience of this project is students with a background in Computer
+Engineering Technology who may have not taken part in a project of this type
+before. These students students will typically be in their final year of study.
 
  
 
@@ -443,8 +472,6 @@ discussed.
  
 
 ##### **Hardware**
-
- 
 
 The Auto Vehicle’s chassis has all the hardware connected or mounted on it that
 operates together to achieve the functionalities that are required from it. The
@@ -465,8 +492,6 @@ which based on the data controls the DC Motors direction.
 
 ##### **Database**
 
- 
-
 The system requires two databases, one will be used to store the users that have
 signed up to use the mobile application and another to store data of the mapped
 area. The mobile application user’s database is a MySQL database on a free
@@ -484,8 +509,6 @@ area to the user.
 
 ##### **Web Interface**
 
- 
-
 A website will be developed to allow the user can login to his account. Each
 specific user will be able to see their previous data been collected using the
 AutoVehicle. One section of the web site will have a small bio for the
@@ -499,8 +522,6 @@ feedback and suggestions on how we may improve the project.
  
 
 ##### **Mobile Application**
-
- 
 
 The AutoVehicle Application is used to communicate with the autonomous vehicle
 remotely. It has in total 12 java classes which includes 6 activities. The
@@ -589,12 +610,9 @@ application and displayed in this activity.
 
  
 
-The system is mainly meant for the users of the mobile application to interact
-with. The only requirements are for the users that will use the application.
-
-The users can sign up or login to use the remote control and mapping
-functionalities. Where through the mobile application they can interact with the
-hardware send and receive data from it.
+The end user of this product will be a person with a desire to map an area
+without having to carry out the task manually. They will also have access to a
+smart phone with working Bluetooth.
 
  
 
@@ -603,19 +621,22 @@ hardware send and receive data from it.
  
 
 The main constraint on the system is that its dependent on the internet for
-connection to be made to the database when the users want sign up or login,
-connection to the hardware to be able to access the functionalities is also
-dependent on the internet.
+connection to be made to the database when users want to sign up or login. A
+connection to the hardware through internet or Bluetooth is also required to be
+able to access the necessary functionalities from the mobile application. Using
+Bluetooth to connect also provides a distance issue, in that it requires the
+receiver to be within a certain range to be able to connect efficiently.
 
 Another constraint is that the mobile application is only available in two
-languages that are English and French, therefore users that don’t understand any
-of those two languages will not be able to use the application.
+languages which are English and French, therefore users that may not understand
+any of those two languages will not be able to use the application effectively.
 
-An assumption about the system is that it will require the users to have a
-certain android API (API level 19 and above) as a minimum requirement to be able
-to get the mobile application on their smart phones, so users that have phones
-that don’t meet that requirement wont be able to get and use the mobile
-application.
+An assumption of the system is that it the users to will have an android device
+that runs on Android API level 19 and above as a minimum requirement to use the
+mobile application on their smart phones. Users with devices that don’t meet the
+requirements will not be able to download and use the mobile application.
+
+ 
 
  
 
@@ -632,26 +653,34 @@ the project.
 
 #### **2.3.2 Time Commitment**
 
+| *Task*                                                  | *Time Estimate* |
+|---------------------------------------------------------|-----------------|
+| Acquire parts                                           | 1 day           |
+| Assemble chassis                                        | 30 minutes      |
+| Print PCB(Optional)                                     | 2 hours         |
+| Solder components onto PCB (if using PCB)               | 1 hour          |
+| Setup sensors on breadboard (Optional if not using PCB) | 10 minutes      |
+| Setup all wiring and connections to the Raspberry Pi    | 45 minutes      |
+| Configure Rasperry Pi with OS                           | 1 hour          |
+| Setup Android Application                               | 40 minutes      |
+| Setup Code for on raspberry p for car operation         | 20 minutes      |
+| Testing                                                 | 1-2 hours       |
+
  
-
-Approximate time for project completion : 1 year
-
-Time required for Phase 1 : 12 weeks
-
-Time required for Phase 2: 10 weeks
-
-Amount of hours required per week: 6 hours
 
  
 
 #### **2.3.3 Budget**
 
- 
+These prices may vary depending on which supplier you purchase them from. All
+these parts excluding the Raspberry Pi can be purchased from Creatron Inc. The
+raspberry pi can be ordered online through amazon. Parts with a “\*” can be
+replaced with suitable alternatives.
 
 | *Item*                                   | *Cost(Before Tax)* | *Tax*    | *Cost(After Tax)* |
 |------------------------------------------|--------------------|----------|-------------------|
 | Raspberry Pi Kit                         | \$ 99.99           | \$ 13.00 | \$ 112.99         |
-| Hwydo 4WD Robot Smart Car Chassis        | \$ 38.00           | \$ 4.94  | \$ 42.94          |
+| Hwydo 4WD Robot Smart Car Chassis\*      | \$ 38.00           | \$ 4.94  | \$ 42.94          |
 | Energizer Max AA Batteries               | \$ 4.97            | \$ 0.65  | \$ 5.62           |
 | HC-SR04 Ultrasonic Sensors (x2*)*        | \$ 4.99            | \$ 0.65  | \$ 5.64           |
 | 6“ Male to Male Jumper Wires (x10*)*     | \$ 2.97            | \$ 0.39  | \$ 3.36           |
@@ -664,7 +693,7 @@ Amount of hours required per week: 6 hours
 
 #### **2.3.4 System Diagram**
 
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/system%20diagram.png)
+![](system%20diagram.png)
 
  
 
@@ -719,13 +748,14 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 -   And finally place the sensor circuit somewhere on the edge of the chassis so
     nothing will be interfering with the sensors like the wires.
 
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pcblayout.png)
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/boardschematic.png)
+![](boardschematic.png)
 
  
 
 #### **2.3.6 PCB/Soldering**
+
+The files needed to recreate the PCB can be found at this link: [PCB
+layout](https://github.com/Khemar1/khemar1.github.io/blob/master/PCB%20Eagle%20FIles/sensor%20board%20(2).zip)
 
 Soldering onto the PCB is a simple task that even beginners can carry out but it
 is recommended that you have at least basic knowledge of circuitry. Practice
@@ -751,6 +781,10 @@ sponge (this is done to clean the iron)
 
 Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
 TO FOLLOW SCHEMATIC)
+
+ 
+
+![](pcblayout.png)
 
  
 
@@ -810,7 +844,51 @@ In this phase, you will be powering up your car and PCB(if you chose to use one)
 
  
 
+**Website Designing**
+
  
+
+**Mobile Application**
+
+The files needed to recreate the android application can be found at the
+following link: <https://github.com/bilfnous/AutonomousVehicle>
+
+You will need a physical device that runs on at least Android APK level 19(4.4 &
+above) to run this application. A virtual android device is not recommended as
+it does not have access to bluetooth.
+
+-   Follow the link above to go to the repository where the android code is
+    stored.
+
+-   Download the repository or follow this direct link
+    <https://github.com/bilfnous/AutonomousVehicle/archive/master.zip>
+
+-   Unzip the folder
+
+-   Open Android Studio
+
+-   Go to file, new, import project, locate the project you just downloaded and
+    click OK
+
+-   After importing the project, wait for gradle to load then make sure that all
+    the java classes from the repository can be found there.
+
+-   Before continuing, enable developer options on your android device by going
+    to settings, software info
+
+-   Tap build number multiple times until a pop up appears saying you are now a
+    developer
+
+-   Go back to the settings menu and enter developer options, from there turn on
+    developer options and enable USB debugging
+
+-   Plug your device into your computer
+
+-   Run the project in android studio by click the green triangular button or
+    use the run menu.
+
+-   After clicking the run button you will be met with a screen that asks you to
+    choose which device you want to run the application on, choose your device
 
  
 
@@ -996,14 +1074,165 @@ Plug the raspberry pi into a power source and the LED should turn on.
 -   Power up the raspberry pi and login
 
 -   Download [sensor2.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/sensor2.py)
+    or copy the code below
+
+ 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import RPi.GPIO as gpio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import time
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def distance(measure='cm'):
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gpio.setmode(gpio.BOARD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gpio.setup(12, gpio.OUT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gpio.setup(16, gpio.IN)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gpio.output(12, False)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+while gpio.input(16) == 0:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+nosig = time.time()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+while gpio.input(16) == 1:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sig = time.time()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tl = sig - nosig
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if measure == 'cm':
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+distance = tl / 0.000058
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+elif measure == 'in':
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+distance = tl / 0.000148
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+else:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+print('improper choice')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+distance = None
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gpio.cleanup()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+return distance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+print(distance('cm'))
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ 
 
 -   Open your terminal and go into the directory where you downloaded the
     program
 
--   Run the program using sensor2.py
+-   Run the program using the command: sudo python sensor2.py
 
 -   Place an object in front of the sensor and it should return the distance of
     the object to the screen.
+
+ 
 
  
 
@@ -1057,29 +1286,34 @@ You can further test the car by placing it in an open area and watching it go
 
  
 
- 
+3. Conclusion
+-------------
+
+This autonomous vehicle is fully autonomous and uses ultrasonic sensors to
+navigate and record coordinates in an area which can be sent to a database. This
+database can then be retrieved by a website to display them to specific users
+when they log in. The mobile application retrieves the coordinates from the
+database in addition to a drawn map of the area which it will be able to display
+to the user. The application can also remotely control the car through the usage
+of an onscreen joystick, through a Bluetooth or WiFi connection. The information
+presented is be centered on the design of the autonomous vehicle in addition to
+the mapping algorithm which it implements.
+
+
+
+4. Recommendation
+-----------------
+
+As the project is now, it can be further improved in many aspects. A power bank
+can be used to power the motor instead of the AA batteries, this will allow the
+motor to run for longer periods and it can also be recharged when not in use.
+Currently the algorithm we use to do the mapping is very simple and specific to
+our needs. There are other options that will allow the mapping to be done more
+efficiently albeit with more complicated code.
 
  
 
- 
-
-**Conclusion**
---------------
-
- 
-
- 
-
- 
-
-**Recommendation**
-------------------
-
- 
-
- 
-
-**References**
---------------
+5. References
+-------------
 
  
