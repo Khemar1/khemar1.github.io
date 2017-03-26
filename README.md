@@ -1,36 +1,11 @@
 ---
 csl: apa.csl
 bibliography: AutoVehicleCitations.bib
+title: AutoVehicle
+author: "by: JBK.17 (Khemar Bryan, Jan Yalda, Bilal Al-fanous)"
 ---
 
-\pagebreak
-
-\begin{center}
-
-**Auto Vehicle**
-================
-
-\end{center}
-
-by Khemar Bryan, Jan Yalda, Bilal Al-fanous
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Date: January 20, 2017
+Date: March 31, 2017
 
  
 
@@ -51,12 +26,14 @@ or indirect sources used are acknowledged as references.
 
  
 
-Date:
+Date: March 31, 2017
 
  
 
-Approved Proposal
------------------
+\pagebreak
+
+**Approved Proposal**
+---------------------
 
  
 
@@ -66,7 +43,7 @@ Prepared by Khemar Bryan, Jan Yalda, Bilal Al-Fanous  
 *Computer Engineering Technology Students*  
 ​
 
-Project Website : [https://khemar1.github.io](https://khemar1.github.io)
+Project Website : <https://khemar1.github.io>
 
  
 
@@ -80,9 +57,11 @@ Project Website : [https://khemar1.github.io](https://khemar1.github.io)
 
 4.  [Concluding Remarks](#concluding-remarks)
 
-5.  [References](#9-references)
+5.  [References](#references)
 
  
+
+\pagebreak
 
 ### **Executive Summary**
 
@@ -130,7 +109,7 @@ which provides insight into similar efforts.
 In the Computer Engineering Technology program, we have learned about the
 following topics from the respective relevant courses:
 
--   Java Docs from CENG 212 Programming Techniques In Java,[@7158986]
+-   Java Docs from CENG 212 Programming Techniques In Java
 
 -   Construction of circuits from CENG 215 Digital And Interfacing Systems,
 
@@ -248,6 +227,8 @@ This proposal presents a plan for providing an IoT solution for AutoVehicle.
 This is an opportunity to integrate the knowledge and skills developed in our
 program to create a collaborative IoT capstone project.
 
+\pagebreak
+
 Abstract
 --------
 
@@ -270,6 +251,8 @@ can be retrieved by the mobile & web applications. The coordinates, when
 retrieved by the mobile application, will then be displayed in the form of a 2D
 map of the area.
 
+\pagebreak
+
 **Table of Contents**
 ---------------------
 
@@ -285,21 +268,21 @@ map of the area.
 
 [List of Illustrations](#4-list-of-illustrations)
 
-1.  [Introduction](#5-introduction)
+[Introduction](#5-introduction)
 
-2.  [System Requirements Document](#6-system-requirements-document)
+[System Requirements Document](#6-system-requirements-document)
 
-    [2.1 Introduction](#introduction)
+1.  [Introduction](#introduction)
 
-    [2.1.1 Purpose](#211-purpose)
+    [1.1 Purpose](#11-purpose)
 
-    [2.1.2 Definitions](#212-definitions)
+    [1.2 Definitions](#12-definitions)
 
-    [2.1.3 Overview](#213-overview)
+    [1.3 Overview](#13-overview)
 
-    [2.2 Overall Description](#22-overall-description)
+2.  [Overall Description](#2-overall-description)
 
-    [2.2.1 Work Breakdown](#221-work-breakdown)
+    [2.1 Work Breakdown](#21-work-breakdown)
 
     -   [Hardware](#hardware)
 
@@ -309,72 +292,79 @@ map of the area.
 
     -   [Mobile Application](#mobile-application)
 
-    [2.2.2 Product Perspective](#222-product-perspective)
+    [2.2 Product Perspective](#22-product-perspective)
 
-    [2.2.3 Product Functions](#223-product-functions)
+    [2.3 Product Functions](#23-product-functions)
 
-    [2.2.4 User Characteristics](#224-user-characteristics)
+    [2.4 User Characteristics](#24-user-characteristics)
 
-    [2.2.5 Constraints, Assumptions and
-    Dependencies](#225-constraints-assumptions-and-dependencies)
+    [2.5 Constraints](#25-constraints-assumptions-and-dependencies)
 
-    [2.3 Build Instructions](#23-bulid-instructions)
+    2.6 Assumptions and Dependencies
 
-    [2.3.1 Introduction](#231-introduction)
+3.  [Build Instructions](#3-bulid-instructions)
 
-    [2.3.2 Time Commitment](#232-time-commitment)
+    [3.1 Introduction](#31-introduction)
 
-    [2.3.3 Budget](#233-budget)
+    [3.2 Time Commitment](#32-time-commitment)
 
-    [2.3.4 System Diagram](#234-system-diagram)
+    [3.3 Budget](#33-budget)
 
-    [2.3.5 Mechanical Assembly](#235-mechanical-assembly)
+    [3.4 System Diagram](#34-system-diagram)
 
-    [2.3.6 PCB/Soldering](#236-pcb-soldering)
+    [3.5 Mechanical Assembly](#35-mechanical-assembly)
 
-    [2.3.7 Power Up](#237-power-up)
+    [3.6 PCB/Soldering](#36-pcb-soldering)
+
+    [3.7 Power Up](#37-power-up)
 
     -   [Powering Up PCB](#powering-up-pcb)
 
     -   [Powering Up Car](#powering-up-car)
 
-    [2.4 Specific Requirements](#83-specific-requirements)
+4.  [Specific Requirements](#4-specific-requirements)
 
-    2.4.1 External Interface Requirements
+    4.1 External Interface Requirements
 
-    2.4.2 Functional Requirements
+    4.2 Functional Requirements
 
-    2.4.3 Performance Requirements
+    4.3 Performance Requirements
 
-    2.4.4 Logical Database Requirements
+    4.4 Logical Database Requirements
 
-    2.4.5 Software System Attributes
+    4.5 Software System Attributes
 
-    [2.5 Progress Reports](#25-progress-reports)
+5.  [Progress Reports](#5-progress-reports)
 
     -   [February 3, 2017](#february-3-2017)
 
     -   [February 17, 2017](#february-17-2017)
 
-    [2.6 Testing](#26-testing)
+    -   [March 10, 2017](#march-10-2017)
 
-    [2.6.1 Unit Testing](#unit-testing)
+    -   [March 24, 2017](#march-24-2017)
 
-    [2.6.2 Product Testing](#product-testing)
+6.  [Testing](#6-testing)
+
+    [6.1 Unit Testing](#unit-testing)
+
+    [6.2 Product Testing](#product-testing)
 
      
 
-3.  [Conclusion](#3-conclusion)
+[Conclusion](#conclusion)
 
-4.  [Recommendation](#4-recommendation)
+[Recommendation](#recommendation)
 
-5.  [References](#5-references)
+[Appendices](#appendices)
 
-6.  Appendices
+[References](#references)
+
+ 
 
  
 
- 
+\pagebreak
 
 **List of Illustrations**
 -------------------------
@@ -391,7 +381,7 @@ map of the area.
 
  
 
- 
+\pagebreak
 
 **Introduction**
 ----------------
@@ -414,18 +404,18 @@ will implement.
 
  
 
- 
+\pagebreak
 
 **System Requirements Document**
 --------------------------------
 
  
 
-### 2.1 Introduction
+### 1. Introduction
 
  
 
-#### **2.1.1 Purpose**
+#### **1.1 Purpose**
 
 The purpose of this small scale vehicle is to be able to autonomously navigate
 and map an area. Autonomous vehicles are the current trend in technology and
@@ -434,14 +424,14 @@ physically carry out the task.
 
  
 
-#### **2.1.2 Definitions**
+#### **1.2 Definitions**
 
 An autonomous vehicle is a vehicle that is capable of sensing its environment
-and navigation without human input \*add citation
+and navigation without human input
 
  
 
-#### **2.1.3 Overview**
+#### **1.3 Overview**
 
 This vehicle is made using a combination of Raspberry Pi 3, Ultrasonic sensors,
 and a motor driver. These components are built onto smart car chassis which will
@@ -450,7 +440,7 @@ the information back to the raspberry pi.
 
  
 
-2.1.4 Target Audience
+**1.4 Target Audience**
 
 The target audience of this project is students with a background in Computer
 Engineering Technology who may have not taken part in a project of this type
@@ -458,16 +448,28 @@ before. These students students will typically be in their final year of study.
 
  
 
-### 2.2 Overall Description
+\pagebreak
 
-The following section will have an overview of the whole system. The basic
-functionalities and how it interacts with the mobile application will be
-explained. Lastly the constraints and assumptions of the system will be
-discussed.
+### 2. Overall Description
+
+This section will give an overview of the whole system. The system will be
+explained to show the different components of the system interact with one
+another and introduce the basic functionality of it. It will describe what type
+of users will be expected to use the system and what functionality will be
+available to them. In addition to that, the constraints and assumptions for the
+system will be outlined.
 
  
 
-#### **2​.2.1 Work Breakdown**
+#### **2.1 Work Breakdown**
+
+ 
+
+**Introduction**
+
+The hardware and mobile application were a collaborative effort during the first
+stage of the project, but as of the second stage this is how the work was
+divided.
 
  
 
@@ -544,24 +546,36 @@ English and French.
 
  
 
- 
+\pagebreak
 
-#### **2.2.2 Product perspective**
-
- 
-
-The system mainly consists of a mobile application which will be used to control
-the hardware as an RC car, the other use will be to start and stop the mapping
-functionality of the hardware and to view the mapped area.
+#### **2.2 Product perspective**
 
  
 
-The mobile application has a login functionality which requires a user to be
-existing in the users database. The mobile application sends a request to the
-database to check if the user credentials provided matches one of the users that
-exists in the database then sends a response back to the mobile application
-which indicates if the user exists or not and therefore gives or denies access
-to the main functionalities of the application.
+The system will consists of 3 parts: one mobile application, one Raspberry Pi
+controlled 4 wheeled robot(car) and one database. The mobile application will
+communicate with the car and control it using an onscreen controller, it will
+also be able to retrieve a map from the car and send it to the database. The
+database will allow users to log into the application and store user related
+information.
+
+ 
+
+The mobile application will need to communicate with the car over a Bluetooth
+connection using a built in Bluetooth Adapter on both devices and it will
+communicate with the database through an internet connection. The Bluetooth and
+internet functionality will be written into the the application in order to
+allow the user to use these functions seamlessly.
+
+ 
+
+The mobile application has login functionality which requires a user be existing
+in the online database. The mobile application sends a request to the database
+to check if the user credentials provided matches one of the users that exists
+in the database then sends a response back to the mobile application which
+indicates if the user exists or not and therefore gives or denies access to the
+main functionalities of the application. If the user does not have a login they
+can signup for one.
 
  
 
@@ -576,7 +590,27 @@ functionality instead.
 
  
 
-#### **2​.2.3 Product functions**
+The database will be hosted on an online server and it will be store data from
+the application. As stated before, the mobile application will require access to
+the database to send login information and retrieve a response to allow the user
+to access it’s functions.
+
+ 
+
+There are some restrictions as it relates to connectivity on both the hardware
+and the mobile application. Although the application can communicate with the
+hardware over a WiFi network it is limited to certain WiFi networks. Enterprise
+WiFi, for example will cause the application to crash when trying to connect to
+the car. To avoid this problem Bluetooth functionality will be available as an
+alternative.
+
+ 
+
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/productperspective.png)
+
+ 
+
+#### **2.3 Product functions**
 
  
 
@@ -606,52 +640,84 @@ application and displayed in this activity.
 
  
 
-#### **2.2.4 User characteristics**
+#### **2.4 User characteristics**
+
+There will be two types of users of this project, the owner of the project and
+users of the mobile application and hardware. Both of these users will have
+different uses of the system and therefore will have different requirements.
+
+The owner of this project will have access to the database which allows them to
+make changes to it as they please. They will have their own login credentials
+have access to the mobile application and hardware.
+
+Users of the mobile application and hardware will only have access to those two
+components. This means that the users will require login credentials to use the
+application. They will be allowed to signup and login to the application which
+would allow them to access it’s functionalities. By proxy of the application
+they will have access to the hardware as well, through the connection between
+the hardware and application.
 
  
 
-The end user of this product will be a person with a desire to map an area
-without having to carry out the task manually. They will also have access to a
-smart phone with working Bluetooth.
+#### **2.5 Constraints, assumptions and dependencies**
 
- 
+The mobile application is constrained by the internet connection. Since the
+application sends to and receives data from the database over the internet it is
+crucial that there is an internet connection.The application also requires there
+be an existing internet connection to connect to the car over WiFi.
 
-#### **2​.2.5 Constraints, assumptions and dependencies**
+The system UI may provide another constraint on the mobile application. The
+application requires that the phone be running on at least Android API level 19,
+to be downloaded.
 
- 
-
-The main constraint on the system is that its dependent on the internet for
-connection to be made to the database when users want to sign up or login. A
-connection to the hardware through internet or Bluetooth is also required to be
-able to access the necessary functionalities from the mobile application. Using
-Bluetooth to connect also provides a distance issue, in that it requires the
-receiver to be within a certain range to be able to connect efficiently.
+Bluetooth connectivity is also a constraint on the mobile application. It can
+connect to the car through Bluetooth but it requires that both the raspberry pi
+and the device the application is running on have Bluetooth adapters. Using
+Bluetooth to connect also cause provides a proximity issue. The connection
+requires that the receiver receiver and sender both be within a certain range of
+each other to be able to connect efficiently or at all.
 
 Another constraint is that the mobile application is only available in two
-languages which are English and French, therefore users that may not understand
-any of those two languages will not be able to use the application effectively.
+languages: English and French. Users will be required to understand one of those
+two languages to use the application effectively although it is not impossible.
+
+The car requires that external libraries be installed onto the raspberrypi so
+that it can access the Bluetooth functionalities of the program running on it.
+If these libraries are not installed the program on the car will not be able to
+execute.
+
+ 
+
+#### **2.6 Assumptions and Dependencies**
 
 An assumption of the system is that it the users to will have an android device
 that runs on Android API level 19 and above as a minimum requirement to use the
 mobile application on their smart phones. Users with devices that don’t meet the
 requirements will not be able to download and use the mobile application.
 
- 
+Another assumption of the system is that users will have devices with
+operational Bluetooth and WiFi adapters.
+
+If the user does not have enough space on their device they will not be able to
+download and use it. It is assumed that users will have at least 15MB of space
+free on their device.
 
  
 
-### **2.3 Build Instructions**
+\pagebreak 
+
+### **3. Build Instructions**
 
  
 
-#### **2.3.1 Introduction**
+#### **3.1 Introduction**
 
 This content of this section will give detailed instructions on how to recreate
 the project.
 
  
 
-#### **2.3.2 Time Commitment**
+#### **3.2 Time Commitment**
 
 | *Task*                                                  | *Time Estimate* |
 |---------------------------------------------------------|-----------------|
@@ -670,7 +736,7 @@ the project.
 
  
 
-#### **2.3.3 Budget**
+#### **3.3 Budget**
 
 These prices may vary depending on which supplier you purchase them from. All
 these parts excluding the Raspberry Pi can be purchased from Creatron Inc. The
@@ -691,13 +757,15 @@ replaced with suitable alternatives.
 
  
 
-#### **2.3.4 System Diagram**
+#### **3.4 System Diagram**
 
-![](system%20diagram.png)
+The diagram below illustrates how all of the components on the AutoVehicle are
+interconnected. The raspberry pi is the central hub for all the devices to
+communicate within the structure.
 
- 
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/systemd.png)
 
-#### **2.3.5 Mechanical Assembly**
+#### **3.5 Mechanical Assembly**
 
 To start unbox all the parts that come in the 4WD chassis kit then start by:
 
@@ -752,7 +820,7 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 
  
 
-#### **2.3.6 PCB/Soldering**
+#### **3.6 PCB/Soldering**
 
 The files needed to recreate the PCB can be found at this link: [PCB
 layout](https://github.com/Khemar1/khemar1.github.io/blob/master/PCB%20Eagle%20FIles/sensor%20board%20(2).zip)
@@ -780,15 +848,13 @@ sponge (this is done to clean the iron)
 **Step 4**
 
 Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
-TO FOLLOW SCHEMATIC)
-
- 
+TO FOLLOW SCHEMATIC BELOW)
 
 ![](pcblayout.png)
 
  
 
-#### **2.3.7 Power Up**
+#### **3.7 Power Up**
 
 In this phase, you will be powering up your car and PCB(if you chose to use one)
 
@@ -844,11 +910,13 @@ In this phase, you will be powering up your car and PCB(if you chose to use one)
 
  
 
-**Website Designing**
+\*talk about bluetooth code.... sudo apt-get install python-bluez
+
+#### **Website Designing**
 
  
 
-**Mobile Application**
+#### **Mobile Application**
 
 The files needed to recreate the android application can be found at the
 following link: <https://github.com/bilfnous/AutonomousVehicle>
@@ -890,21 +958,56 @@ it does not have access to bluetooth.
 -   After clicking the run button you will be met with a screen that asks you to
     choose which device you want to run the application on, choose your device
 
+  \pagebreak
+
+### 4. Specific Requirements
+
+This section contains all the of the functional and quality requirements of the
+system. It gives a detailed description of the system and all its features
+
  
 
-### 2.4 Specific Requirements
+#### 4.1 External interface Requirements
+
+This sections provides a detailed description of all inputs and outputs into the
+system. It also gives a description of the hardware and software involved in the
+system.
+
+ 
+
+##### **User Interface**
+
+When a user opens the application for the first time they should be greeted by a
+login page. Assuming the user does not have login credentials, they can signup
+by going to the signup page which is an option in the login page. After signing
+up the user can go back to the login page. For future instances users have the
+option of the application remembering their username so that when they open the
+application the next time they only have to enter their password.
+
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/login.png)
+
+\*login
+
+After logging into the application the user will be taken to the main menu where
+they can choose to use any of the applications main functionalities, which are:
+the remote control(over wifi), remote control(over bluetooth) and mapping. They
+can also go to the settings menu to turn Bluetooth
 
  
 
  
 
-### 2.5 Progress Reports
+ 
+
+  \pagebreak
+
+### 5. Progress Reports
 
  
 
 #### *February 3, 2017*
 
-**Status Summary**
+##### **Status Summary**
 
 With the remote-control part of the project completed we are now focused on the
 mapping functionality and making adjustments to improve the hardware and the
@@ -915,35 +1018,33 @@ understanding of how it works.  
 
  
 
-**Project Overview**  
-The mapping functionality is still in the research phase.  
+###### **Project Overview**
+
+The mapping functionality is still in the research phase.
+
 The android application is being modified to prevent crashing and incorporate
 Bluetooth connectivity.
 
 The web site is under development.
 
-**Problems and Opportunities**
+##### **Problems and Opportunities**
 
 Mapping is a very hard concept to comprehend and implement. We’ve gathered
 information from various sources which mainly include complex algorithms on how
 to do it but we’re not quite sure how we can use it. This provides us with the
 opportunity to collaborate with someone who has experience with robotic mapping.
 
- 
-
 During the last semester, we used a WiFi/Internet connection to communicate with
 the car. This worked well from our homes but connecting to an enterprise
 WiFi proved to be an issue. This has provided us the opportunity to learn about
 Bluetooth connectivity and how we can incorporate that into our project.
 
-**Budget Overview**
+##### **Budget Overview**
 
 No changes to the budget thus far, we haven’t had to add anything to the
 project.
 
- 
-
-**Conclusions **
+##### **Conclusions **
 
 Overall the project is still in development. Our goals for this month are to
 prevent the application from crashing, understand and implement the mapping
@@ -953,7 +1054,7 @@ functionality and have a skeleton for the website.
 
 #### *February 17, 2017*
 
-**Status Summary**
+##### **Status Summary**
 
 This week we met with our collaborator to discuss our options, as it relates to
 mapping. After meeting with the collaborator new solutions were introduced, and
@@ -964,7 +1065,7 @@ and outlines.
 
  
 
-**Project Overview**
+##### **Project Overview**
 
 The mapping functionality is still in the research phase but will now see some
 progress after we take into consideration the options brought to us by our
@@ -974,7 +1075,7 @@ and the final outline of the website is taking shape.
 
  
 
-**Problems and opportunities**
+##### **Problems and opportunities**
 
 Jan: A meeting with a collaborator in the mapping field took place, and some
 very interesting ideas were introduced. An electronic peripheral might be used,
@@ -998,7 +1099,7 @@ www.munro.humber.ca/\~n00994056/index.html
 
  
 
-**Budget Overview                     **
+##### **Budget Overview**
 
 After meeting with the mapping collaborator, we may have to adjust our budget.
 Among other things, we have taken into consideration an IMU, which should cost
@@ -1006,7 +1107,7 @@ around 50\$.
 
  
 
-**Conclusion**
+##### **Conclusions**
 
 Overall, there has been major progress in regards to the connectivity aspect of
 the project, our goals have been met for this month with the app no longer
@@ -1017,9 +1118,105 @@ to be in development, some initial mapping code and testing should take place. 
 
  
 
+#### *March 10, 2017*
+
+##### **Integration Progress**
+
+After coming to the conclusion that the Wi-Fi is not the best option to go with
+because of restrictions that Humber Wi-Fi has, we have decided to use Bluetooth
+as the main method of communication between the Raspberry Pi and the Android
+application. Our integration is not yet complete although we have seen progress
+with the application and hardware. We now have a connection between the
+Raspberry Pi and the Android application in addition to the android application
+and the database. The only connection left to establish is between the website
+and database.
+
  
 
-### 2.6 Testing
+##### **Project Overview**
+
+The mapping functionality is in progress. So far, a visual of the mapped area
+can be viewed from the raspberry pi when the program is run. Jan will work on
+sending the map to the Android application through Bluetooth.  
+The android application now has the ability to connect to the raspberry pi using
+Bluetooth and control the basic functions of the car. The main goal for Khemar
+moving forward is to work on retrieving the mapped area and displaying it.
+
+Bilal is working on establishing a connection between the website and the
+database.
+
+##### **Problems and Opportunities**
+
+Our main problem currently is establishing connection to the database using the
+website, so the user can sign up/login and view the mapped area.
+
+##### **Budget Overview**
+
+No changes to the budget thus far.
+
+ 
+
+##### **Conclusions **
+
+Overall the project is going well after resolving the connection issue by using
+Bluetooth. We now need to work on sending the map to the Android application and
+displaying it, also the connection between the website and the database needs to
+be established.
+
+ 
+
+#### *March 14, 2017*
+
+##### **Troubleshooting status**
+
+Throughout the duration of this project there have been numerous hindrances that
+prevented the integration of the car and the mobile application. From
+connectivity issues on the application and vehicle, to problems understanding
+how to implement particular programs such as mapping. This will be an outline of
+some of the troubleshooting we’ve done throughout the project.
+
+Wi-Fi connectivity on the application and hardware sides were issues that
+plagued us for most of the project. Firstly, we were unable to connect to
+enterprise Wi-Fi and this was a problem because the application was reliant on a
+server running on the car. Whenever the application attempted to connect to the
+server on campus it would crash because the server was offline. We resolved the
+enterprise Wi-Fi problem by specifying the location of the Humber certificate
+when writing the network information in etc/wpa_supplicant/wpa_supplicant.conf
+and placing the actual certificate downloaded from Humber’s IT website in
+/etc/certs. After doing that we configured a static IP address on the car and it
+allowed us to connect once but after that it wasn’t possible due to how the
+Humber’s network is configured. These solutions only made our problem worse by
+giving us more issues to resolve, one of which was the VNC connection. In the
+end, we decided it was best to format the SD card and reinstall the Raspbian OS
+to solve the issue. The overall connectivity issue however was solved by going a
+completely different route and opting to connect the application and car over
+Bluetooth instead.
+
+Mapping functionality was a really complicated part of the project when
+researching methods of implementing it. The main reason was that we had most of
+our code for the hardware part in python a language that isn’t that hard to
+learn, but it’s better to just go with a language we are already familiar with,
+mainly to allow us to use our time more efficiently to work on the actual
+mapping functionality. This issue was resolved by converting the code we have
+written in python for the hardware into the C language. This helped us complete
+the mapping functionality faster.   
+
+Issues were also faced while building the website. Finding somewhere to host the
+website proved difficult for a number of reasons. Firstly,  a google service was
+considered, but because the data base  we are trying to connect is json and not
+SQL, the idea of hosting the website on fire base was forfeited. AWS was the
+next consideration, and I have been reading some tutorials on amazon's website
+on how to set up a server and how to host a website on it. For the time being
+the hosting issue has been solved by using the 000webhost website to host the
+site. It is now possible to login to the website. In the meantime, I’ll also
+keep working on AWS. Once I have figured out everything on AWS my plan is to
+possibly host the site there since AWS is commonly used by developers.   
+
+ 
+
+ 
+
+### 6. Testing
 
  
 
@@ -1075,43 +1272,6 @@ Plug the raspberry pi into a power source and the LED should turn on.
 
 -   Download [sensor2.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/sensor2.py)
     or copy the code below
-
- 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-import RPi.GPIO as gpio
-import time
-
-def distance(measure='cm'):
-    gpio.setmode(gpio.BOARD)
-    gpio.setup(12, gpio.OUT)
-    gpio.setup(16, gpio.IN)
-    
-    gpio.output(12, False)
-
-    while gpio.input(16) == 0:
-        nosig = time.time()
-
-    while gpio.input(16) == 1:
-        sig = time.time()
-    
-    tl = sig - nosig
-    
-    if measure == 'cm':
-        distance = tl / 0.000058
-    elif measure == 'in':
-        distance = tl / 0.000148
-    else:
-        print('improper choice')
-        distance = None
-    
-    gpio.cleanup()
-    return distance
-
-print(distance('cm'))
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
- 
 
 -   Open your terminal and go into the directory where you downloaded the
     program
@@ -1175,8 +1335,10 @@ You can further test the car by placing it in an open area and watching it go
 
  
 
-3. Conclusion
--------------
+  \pagebreak
+
+Conclusion
+----------
 
 This autonomous vehicle is fully autonomous and uses ultrasonic sensors to
 navigate and record coordinates in an area which can be sent to a database. This
@@ -1188,21 +1350,30 @@ of an onscreen joystick, through a Bluetooth or WiFi connection. The information
 presented is be centered on the design of the autonomous vehicle in addition to
 the mapping algorithm which it implements.
 
+\pagebreak
 
-
-4. Recommendation
------------------
+Recommendation
+--------------
 
 As the project is now, it can be further improved in many aspects. A power bank
 can be used to power the motor instead of the AA batteries, this will allow the
 motor to run for longer periods and it can also be recharged when not in use.
-Currently the algorithm we use to do the mapping is very simple and specific to
-our needs. There are other options that will allow the mapping to be done more
-efficiently albeit with more complicated code.
+There is also much room for improvement in the mapping aspect of this project.
+The mapping algorithm mentioned in the project is simple and leaves much to be
+desired. The solution can be refined to either map entire room rather than the
+perimeter of the room. An addition of an IMU unit can be used to further improve
+the project. This IMU unit would contain two accelerometers and a gyrometer
+which would allow the vehicle to.... GPS can also be incorporated to allow the
+vehicle to be aware of its location in a room. \*talk about app and map\*
 
- 
+  \pagebreak
 
-5. References
--------------
+Appendices
+----------
+
+  \pagebreak
+
+References
+----------
 
  
