@@ -816,9 +816,7 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 -   And finally place the sensor circuit somewhere on the edge of the chassis so
     nothing will be interfering with the sensors like the wires.
 
-![](boardschematic.png)
-
- 
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/boardschematic.png)
 
 #### **3.6 PCB/Soldering**
 
@@ -850,9 +848,7 @@ sponge (this is done to clean the iron)
 Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
 TO FOLLOW SCHEMATIC BELOW)
 
-![](pcblayout.png)
-
- 
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pcblayout.png)
 
 #### **3.7 Power Up**
 
@@ -990,8 +986,31 @@ application the next time they only have to enter their password.
 
 After logging into the application the user will be taken to the main menu where
 they can choose to use any of the applications main functionalities, which are:
-the remote control(over wifi), remote control(over bluetooth) and mapping. They
-can also go to the settings menu to turn Bluetooth
+the remote control(over WiFi), remote control(over Bluetooth) and mapping.
+
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/mainmenu.png)
+
+When users attempts use the first remote control function they will be prompted
+to go to settings and enter an ip address. This ip address is required for the
+user to connect to the robot over an internet connection. After entering the ip
+address users can go back to the remote control app and select the connect
+option. After connecting they will now be able to move the car with the remote
+control and a direction will be displayed corresponding with the position of the
+joystick.
+
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/wifiremote.png)
+
+The mapping activity also prompts the user with an onscreen prompt to go to
+settings. When the user goes to settings they can turn the Bluetooth on with the
+touch of a button. After turning the Bluetooth on the user will now be able to
+use the mapping functionality. The user must tap the start button and after
+doing so they will receive an onscreen notification saying they have connected.
+When the user taps stop they be notified that the map has been received and it
+will be displayed.
+
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/mapping.png)
+
+ 
 
  
 
