@@ -2,17 +2,28 @@
 csl: apa.csl
 bibliography: AutoVehicleCitations.bib
 title: AutoVehicle
-author: "by: JBK.17 (Khemar Bryan, Jan Yalda, Bilal Al-fanous)"
+author: "Khemar Bryan, Jan Yalda, Bilal Al-fanous (JBK.17)"
 ---
-
-Date: March 31, 2017
 
  
 
-\pagebreak
+\vspace{10 mm} 
+
+\begin{center}
+March 31, 2017
+\end{center}
+
+\pagebreak   \linespread{1.5} \selectfont
+
+AutoVehicle by JBK.17
+=====================
+
+Project website: khemar1.github.io
+
+\vspace{8 mm} 
 
 Declaration of Joint Authorship
--------------------------------
+===============================
 
 We, Jan Yalda, Bilal Al-fanous & Khemar Bryan confirm that this work submitted
 for assessment is our own and is expressed in our own words. Our best effort was
@@ -33,7 +44,7 @@ Date: March 31, 2017
 \pagebreak
 
 **Approved Proposal**
----------------------
+=====================
 
  
 
@@ -47,7 +58,8 @@ Project Website : <https://khemar1.github.io>
 
  
 
-### **Proposal Table of Contents**
+**Proposal Table of Contents**
+------------------------------
 
 1.  [Executive Summary](#executive-summary)
 
@@ -63,7 +75,8 @@ Project Website : <https://khemar1.github.io>
 
 \pagebreak
 
-### **Executive Summary**
+**Executive Summary**
+---------------------
 
 As students in the Computer Engineering Technology program, we will be
 integrating the knowledge and skills we have learned from our program into this
@@ -80,7 +93,8 @@ Production Techniques independently and the application was completed in CENG
 319 Software Project. These will be integrated together this semester in CENG
 355 Computer Systems Project as a member of this 3-student group.
 
-### **Background**
+**Background**
+--------------
 
 The problem solved by this project is how to have a robotic vehicle that will be
 controlled as an RC car with a mobile application, and which can work
@@ -127,7 +141,8 @@ following topics from the respective relevant courses:
 This knowledge and skill set will enable me to build the subsystems and
 integrate them together as my capstone project.
 
-### **Methodology**
+**Methodology**
+---------------
 
 This proposal is assigned in the first week of class and is due at the beginning
 of class in the second week of the fall semester. My coursework will focus on
@@ -221,7 +236,8 @@ important to start tasks as soon as possible to be able to meet deadlines.
 
  
 
-### **Concluding remarks**
+**Concluding remarks**
+----------------------
 
 This proposal presents a plan for providing an IoT solution for AutoVehicle.
 This is an opportunity to integrate the knowledge and skills developed in our
@@ -230,7 +246,7 @@ program to create a collaborative IoT capstone project.
 \pagebreak
 
 Abstract
---------
+========
 
 So far human controlled robots have been great; they are able to complete many
 tasks instructed by the user that's controlling them. As technology advances in
@@ -254,7 +270,7 @@ map of the area.
 \pagebreak
 
 **Table of Contents**
----------------------
+=====================
 
 [Title Page](#auto-vehicle)
 
@@ -302,39 +318,47 @@ map of the area.
 
     2.6 Assumptions and Dependencies
 
-3.  [Build Instructions](#3-bulid-instructions)
+3.  [Specific Requirements](#4-specific-requirements)
 
-    [3.1 Introduction](#31-introduction)
+    [3.1 External Interface Requirements](#41-external-interface-requirements)
 
-    [3.2 Time Commitment](#32-time-commitment)
+    3.2 Functional Requirements
 
-    [3.3 Budget](#33-budget)
+    3.3 Performance Requirements
 
-    [3.4 System Diagram](#34-system-diagram)
+    3.4 Logical Database Requirements
 
-    [3.5 Mechanical Assembly](#35-mechanical-assembly)
+    3.5 Software System Attributes
 
-    [3.6 PCB/Soldering](#36-pcb-soldering)
+4.  [Build Instructions](#4-build-instructions)
 
-    [3.7 Power Up](#37-power-up)
+    [4.1 Introduction](#41-introduction)
+
+    [4.2 Time Commitment](#42-time-commitment)
+
+    [4.3 Budget](#43-budget)
+
+    [4.4 System Diagram](#44-system-diagram)
+
+    [4.5 Mechanical Assembly](#45-mechanical-assembly)
+
+    [4.6 PCB/Soldering](#46-pcb-soldering)
+
+    [4.7 Power Up](#47-power-up)
 
     -   [Powering Up PCB](#powering-up-pcb)
 
     -   [Powering Up Car](#powering-up-car)
 
-4.  [Specific Requirements](#4-specific-requirements)
+    4.8 Additonal Libraries & Modifications
 
-    4.1 External Interface Requirements
+    4.9 Designing the Website
 
-    4.2 Functional Requirements
+    4.10 Creating the Application
 
-    4.3 Performance Requirements
+5.  [Project Schedule](#5-project-schedule)
 
-    4.4 Logical Database Requirements
-
-    4.5 Software System Attributes
-
-5.  [Progress Reports](#5-progress-reports)
+6.  [Progress Reports](#6-progress-reports)
 
     -   [February 3, 2017](#february-3-2017)
 
@@ -344,13 +368,15 @@ map of the area.
 
     -   [March 24, 2017](#march-24-2017)
 
-6.  [Testing](#6-testing)
+7.  [Testing](#7-testing)
 
-    [6.1 Unit Testing](#unit-testing)
+    [7.1 Unit Testing](#71-unit-testing)
 
-    [6.2 Product Testing](#product-testing)
+    [7.2 Product Testing](#72-product-testing)
 
-     
+    [7.3 Application Testing](#73-application-testing)
+
+    [7.4 Integration Testing](#74-integration-testing)
 
 [Conclusion](#conclusion)
 
@@ -367,7 +393,7 @@ map of the area.
 \pagebreak
 
 **List of Illustrations**
--------------------------
+=========================
 
  
 
@@ -384,7 +410,7 @@ map of the area.
 \pagebreak
 
 **Introduction**
-----------------
+================
 
 There are numerous areas such as: mines and sewer systems which are beyond the
 reach of humans. These areas may either be too rigid or have entrances that may
@@ -407,15 +433,16 @@ will implement.
 \pagebreak
 
 **System Requirements Document**
---------------------------------
+================================
 
  
 
-### 1. Introduction
+1. Introduction
+---------------
 
  
 
-#### **1.1 Purpose**
+### **1.1 Purpose**
 
 The purpose of this small scale vehicle is to be able to autonomously navigate
 and map an area. Autonomous vehicles are the current trend in technology and
@@ -424,14 +451,14 @@ physically carry out the task.
 
  
 
-#### **1.2 Definitions**
+### **1.2 Definitions**
 
 An autonomous vehicle is a vehicle that is capable of sensing its environment
-and navigation without human input
+and navigation without human input[@811692]
 
  
 
-#### **1.3 Overview**
+### **1.3 Overview**
 
 This vehicle is made using a combination of Raspberry Pi 3, Ultrasonic sensors,
 and a motor driver. These components are built onto smart car chassis which will
@@ -440,7 +467,7 @@ the information back to the raspberry pi.
 
  
 
-**1.4 Target Audience**
+### **1.4 Target Audience**
 
 The target audience of this project is students with a background in Computer
 Engineering Technology who may have not taken part in a project of this type
@@ -450,7 +477,8 @@ before. These students students will typically be in their final year of study.
 
 \pagebreak
 
-### 2. Overall Description
+2. Overall Description
+----------------------
 
 This section will give an overview of the whole system. The system will be
 explained to show the different components of the system interact with one
@@ -461,7 +489,7 @@ system will be outlined.
 
  
 
-#### **2.1 Work Breakdown**
+### 2.1 Work Breakdown
 
  
 
@@ -473,26 +501,26 @@ divided.
 
  
 
-##### **Hardware**
+**Hardware**
 
 The Auto Vehicle’s chassis has all the hardware connected or mounted on it that
 operates together to achieve the functionalities that are required from it. The
 most important piece of hardware is the Raspberry PI 3, the microcomputer which
-has all the other hardware connected to in where it receives data from and send
-data to, it makes it possible to connect to the mobile application as well to
-send and receive data. The hardware that sends the data to the microcomputer are
-the Ultrasonic Sensors which are distance sensors, they are used to detect
-objects that may appear in front of the vehicle then send a signal to the
-microcomputer where it process it then manipulates the actuators according to
-the data that it received, the actuators are DC Motors used to move the vehicle,
-but before that the microcomputer actually sends data to the H-Bridge the driver
-which based on the data controls the DC Motors direction.
+has all the other hardware connected to it. This is where it receives data from
+and send data t. It also makes it possible to connect to the mobile application
+through a WiFi or Bluetooth connection. The hardware that communicates with the
+microcomputer are the Ultrasonic Sensors which are distance sensors, they are
+used to detect objects that may appear in front of the vehicle then send a
+signal to the microcomputer where it process it then manipulates the actuators
+according to the data that it received, the actuators are DC Motors used to move
+the vehicle, but before that the microcomputer actually sends data to the
+H-Bridge the driver which based on the data controls the DC Motors direction.
 
 (Developed by Jan Yalda)
 
  
 
-##### **Database**
+**Database**
 
 The system requires two databases, one will be used to store the users that have
 signed up to use the mobile application and another to store data of the mapped
@@ -509,7 +537,7 @@ area to the user.
 
  
 
-##### **Web Interface**
+**Web Interface**
 
 A website will be developed to allow the user can login to his account. Each
 specific user will be able to see their previous data been collected using the
@@ -523,24 +551,63 @@ feedback and suggestions on how we may improve the project.
 
  
 
-##### **Mobile Application**
+**Mobile Application**
 
 The AutoVehicle Application is used to communicate with the autonomous vehicle
-remotely. It has in total 12 java classes which includes 6 activities. The
-functions of the activities are as follows: Login Activity is the first page the
-user will see when they open the application, it is where the user enters their
-information to get their user specific information which is stored in the
-database; MenuActivity is the page the user sees after they successfully login,
-they can now choose whether they want to control the car or retrieve a map; The
-register activity is where new users sign up with their information to be stored
-in the database. After registering users will be taken back to the login page;
+remotely. It has in total 12 java classes which includes 7 activities. The
+functions of the activities are as follows:
+
+Login Activity is where the user enters their information to get access to the
+application. The required information to sign in are a username and a password.
+Before logging in users have the option to save their username by touching the
+remember me switch. Upon tapping the sign in button the entered information will
+be sent to the database to be verified.
+
+The Signup Activity allows users without preexisting credentials to add their
+information to the database. The required fields are Name, Username and
+password. The user will also have to reenter their password in another field to
+ensure that it is correct. If any of these fields are left blank the user will
+not be presented with messages above the fields that need to be filled. Upon the
+completion of this, the information is sent to the database.
+
+Menu Activity is the page the user sees upon successfully login, they can now
+choose whether they want to control the car or start the autonomous feature to
+retrieve a map. They also have the ability to enter the settings activity using
+the drop options menu in the top right corner of the screen.
+
+The settings activity is where the user can enter the IP address of their car
+and turn on their Bluetooth. These settings are required to connect to the car.
+
 The remote control activity has a joystick which the user can use to control the
-car; the settings activity is where the user can enter the ip address of their
-car so that they can connect to it; the mapping activity is where the user can
-see the map that their car has made, it will be blank for new user. The app will
-work in unison with both the database and hardware to be fully functional. In
-addition to these various features, the application also has support for both
-English and French.
+car. Before opening this activity it is recommended that users enter an IP
+address in the settings activity. Upon the opening of this activity the user
+will be present with an alert dialog asking them if they want to go to settings
+to enter an IP address. When an IP address is present in the IP address field it
+is possible to attempt to establish a connection to the car. When connected can
+be used to move the car forward, backward or to the right and left. If the an IP
+address is not entered the joystick can still be moved but it will serve no
+purpose. The close connection button is used to terminate the connection between
+the application and the car.
+
+The second Remote Control activity is functionally similar to the first one
+except that this one connects to the car through a Bluetooth Connection. Upon
+the opening, an alert dialog will be displayed asking the user to go to settings
+and turn on Bluetooth. If the Bluetooth is off and the connect button is tapped,
+a toast will appear saying stating that the user must go to settings and turn
+Bluetooth on. When Bluetooth is on and the connect button is tapped a toast will
+appear saying connecting, and upon successful connection another toast will
+appear saying connected. The joystick can be used in a similar fashion to the
+first remote control activity. The close connection button is used to terminate
+the connection
+
+The mapping activity is where the autonomous function of the car can be
+utilized. This activity requires that Bluetooth be turned on. The start button
+is used to attempt to establish a connection to the car. Upon successful
+connection a toast will appear saying that the car has started. To retrieve the
+map the stop button is used stop the car and a drawn map of the will be
+displayed in the white area above.
+
+ 
 
 (Developed by Khemar Bryan)
 
@@ -548,26 +615,28 @@ English and French.
 
 \pagebreak
 
-#### **2.2 Product perspective**
-
  
 
-The system will consists of 3 parts: one mobile application, one Raspberry Pi
-controlled 4 wheeled robot(car) and one database. The mobile application will
-communicate with the car and control it using an onscreen controller, it will
-also be able to retrieve a map from the car and send it to the database. The
-database will allow users to log into the application and store user related
-information.
+### **2.2 Product perspective**  
 
- 
+The system will consists of 3 parts: one mobile application, one 4 wheeled
+robot(car) and one database. The mobile application will communicate with the
+car and control it using an onscreen controller, it will also be able to
+retrieve a map from the car and send it to the database. The database will allow
+users to log into the application and store user related information.
+
+The 4 Wheeled car is a 4 wheel drive robot smart car chassis that has various
+components mounted onto it. It need to be able to operate on its own and run
+python and C programs. To do this it will use a Raspberry Pi 3 modules. It will
+also need to detect obstacles and move its wheels using the motors. These
+functions will be controlled by 2 ultrasonic sensors and a H Drive. All these
+components connected as a whole will allow the car to be autonomous.
 
 The mobile application will need to communicate with the car over a Bluetooth
 connection using a built in Bluetooth Adapter on both devices and it will
 communicate with the database through an internet connection. The Bluetooth and
 internet functionality will be written into the the application in order to
-allow the user to use these functions seamlessly.
-
- 
+allow the user to use these functions seamlessly.  
 
 The mobile application has login functionality which requires a user be existing
 in the online database. The mobile application sends a request to the database
@@ -575,9 +644,7 @@ to check if the user credentials provided matches one of the users that exists
 in the database then sends a response back to the mobile application which
 indicates if the user exists or not and therefore gives or denies access to the
 main functionalities of the application. If the user does not have a login they
-can signup for one.
-
- 
+can signup for one.  
 
 After a successful login to the application has been made the two main
 functionalities are presented. First the functionality to use the Auto Vehicle
@@ -586,16 +653,12 @@ communicates with the hardware using the internet and sends commands to be
 received by the hardware and acted upon which are just basic remote control
 functionalities. The second functionality the mapping of an area communicates
 with the hardware the same way, it just orders the hardware to do the mapping
-functionality instead.
-
- 
+functionality instead.  
 
 The database will be hosted on an online server and it will be store data from
 the application. As stated before, the mobile application will require access to
 the database to send login information and retrieve a response to allow the user
-to access it’s functions.
-
- 
+to access it’s functions.  
 
 There are some restrictions as it relates to connectivity on both the hardware
 and the mobile application. Although the application can communicate with the
@@ -604,13 +667,11 @@ WiFi, for example will cause the application to crash when trying to connect to
 the car. To avoid this problem Bluetooth functionality will be available as an
 alternative.
 
- 
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/productperspective.png)
+![](images/productperspective.png)
 
  
 
-#### **2.3 Product functions**
+### **2.3 Product functions**
 
  
 
@@ -640,7 +701,7 @@ application and displayed in this activity.
 
  
 
-#### **2.4 User characteristics**
+### **2.4 User characteristics**
 
 There will be two types of users of this project, the owner of the project and
 users of the mobile application and hardware. Both of these users will have
@@ -659,7 +720,7 @@ the hardware and application.
 
  
 
-#### **2.5 Constraints, assumptions and dependencies**
+### **2.5 Constraints, assumptions and dependencies**
 
 The mobile application is constrained by the internet connection. Since the
 application sends to and receives data from the database over the internet it is
@@ -688,7 +749,7 @@ execute.
 
  
 
-#### **2.6 Assumptions and Dependencies**
+### **2.6 Assumptions and Dependencies**
 
 An assumption of the system is that it the users to will have an android device
 that runs on Android API level 19 and above as a minimum requirement to use the
@@ -704,20 +765,186 @@ free on their device.
 
  
 
-\pagebreak 
+  \pagebreak
 
-### **3. Build Instructions**
+3. Specific Requirements
+------------------------
+
+This section contains all the of the functional and quality requirements of the
+system. It gives a detailed description of the system and all its features
 
  
 
-#### **3.1 Introduction**
+### 3.1 External interface Requirements
+
+This sections provides a detailed description of all inputs and outputs into the
+system. It also gives a description of the hardware and software involved in the
+system.
+
+ 
+
+**3.1.1 User Interface**
+
+When a user opens the application for the first time they should be greeted by a
+login page. Assuming the user does not have login credentials, they can signup
+by going to the signup page which is an option in the login page. After signing
+up the user can go back to the login page. For future instances users have the
+option of the application remembering their username so that when they open the
+application the next time they only have to enter their password.
+
+![](images/login.png)
+
+ 
+
+After logging into the application the user will be taken to the main menu where
+they can choose to use any of the applications main functionalities, which are:
+the remote control(over WiFi), remote control(over Bluetooth) and mapping.
+
+![](images/mainmenu.png)
+
+ 
+
+When users attempts use the first remote control function they will be prompted
+to go to settings and enter an ip address. This ip address is required for the
+user to connect to the robot over an internet connection. After entering the ip
+address users can go back to the remote control app and select the connect
+option. After connecting they will now be able to move the car with the remote
+control and a direction will be displayed corresponding with the position of the
+joystick.
+
+![](screenshots/wifiremote.png)
+
+ 
+
+The mapping activity also prompts the user with an onscreen prompt to go to
+settings. When the user goes to settings they can turn the Bluetooth on with the
+touch of a button. After turning the Bluetooth on the user will now be able to
+use the mapping functionality. The user must tap the start button and after
+doing so they will receive an onscreen notification saying they have connected.
+When the user taps stop they be notified that the map has been received and it
+will be displayed.
+
+![](screenshots/mapping.png)
+
+The remote control with Bluetooth activity is very similar in functionality to
+the remote control with WiFi activity. The main difference is that in this
+activity the user will connect to the car through a Bluetooth connection rather
+than an internet connection. If the user does not have Bluetooth turned out or
+their device does not have a Bluetooth adapter they will not be able to use this
+functionality.
+
+![](screenshots/bluetoothremote.png)
+
+ 
+
+**3.1.2 Hardware Interface**
+
+The designated hardware for this project is a Raspberry Pi 3 module that is
+mounted on a 4WD chassis. This module is the main component of the car that all
+the other physical components are connected to and communicate with.
+
+*Raspberry Pi 3*
+
+The Raspberry Pi is the main and most important component of the hardware. This
+is where all code will be stored, compiled and run from from. This was the only
+pre-specified piece of hardware as it was a strict requirement for this academic
+project.
+
+ 
+
+ 
+
+ 
+
+*H Bride L298N Motor Driver*
+
+The first piece of hardware that the Raspberry Pi 3 connects to is the L298 H
+Bridge. The H bridge is used to control the motors speed and direction. It is
+also used to provide extra voltage in the case of the Raspberry Pi not being
+able to provide enough due to the fact that it has another source of power. It
+works by allowing a voltage to be applied across a load in either direction.
+
+Pins:
+
+-   Out 1: Motor A lead out
+
+-   Out 2: Motor A lead out
+
+-   Out 3: Motor B lead out
+
+-   Out 4: Mo (*Can actually be from 5v-35v, just marked as 12v*)
+
+-   GND: Ground
+
+-   5v: 5v input (*unnecessary if your power source is 7v-35v, if the power
+    source is 7v-35v then it can act as a 5v out*)
+
+-   EnA: Enables PWM signal for Motor A (Please see the "Arduino Sketch
+    Considerations" section)
+
+-   In1: Enable Motor A
+
+-   In2: Enable Motor A
+
+-   In3: Enable Motor B
+
+-   In4: Enable Motor B
+
+-   EnB: Enables PWM signal for Motor B
+
+ 
+
+Specifications:
+
+-   Double H bridge Drive Chip: *L298N*
+
+-   Logical voltage: *5V Drive voltage: 5V-35V*
+
+-   Logical current: *0-36mA Drive current: 2A (MAX single bridge)*
+
+-   Max power: *25W*
+
+-   Dimensions: *43 x 43 x 26mm*
+
+-   Weight: *26g*
+
+![](l298.png)
+
+*HC-SR04 Ultrasonic Ranging Module*
+
+There are two of these modules and they are used to detect objects within a
+certain range of the car. The ranges can be toggled using code on the raspberry
+pi but the specified range is between 20cm - 400cm.
+
+ 
+
+*Hwydo 4WD Robot Smart Car Chassis*
+
+ 
+
+ 
+
+ 
+
+\pagebreak 
+
+**4. Build Instructions**
+-------------------------
+
+ 
+
+### **4.1 Introduction**
 
 This content of this section will give detailed instructions on how to recreate
 the project.
 
  
 
-#### **3.2 Time Commitment**
+### **4.2 Time Commitment**
+
+The table below gives an outline of the estimated time required to complete this
+project. It should approximately take an entire day to complete if you follow
+all the steps detailed in this document.
 
 | *Task*                                                  | *Time Estimate* |
 |---------------------------------------------------------|-----------------|
@@ -736,7 +963,7 @@ the project.
 
  
 
-#### **3.3 Budget**
+### **4.3 Budget**
 
 These prices may vary depending on which supplier you purchase them from. All
 these parts excluding the Raspberry Pi can be purchased from Creatron Inc. The
@@ -747,7 +974,7 @@ replaced with suitable alternatives.
 |------------------------------------------|--------------------|----------|-------------------|
 | Raspberry Pi Kit                         | \$ 99.99           | \$ 13.00 | \$ 112.99         |
 | Hwydo 4WD Robot Smart Car Chassis\*      | \$ 38.00           | \$ 4.94  | \$ 42.94          |
-| Energizer Max AA Batteries               | \$ 4.97            | \$ 0.65  | \$ 5.62           |
+| Energizer Max AA Batteries\*             | \$ 4.97            | \$ 0.65  | \$ 5.62           |
 | HC-SR04 Ultrasonic Sensors (x2*)*        | \$ 4.99            | \$ 0.65  | \$ 5.64           |
 | 6“ Male to Male Jumper Wires (x10*)*     | \$ 2.97            | \$ 0.39  | \$ 3.36           |
 | 6” Male to Female Jumper Wires (x10*)*   | \$ 2.98            | \$ 0.39  | \$ 3.37           |
@@ -757,15 +984,17 @@ replaced with suitable alternatives.
 
  
 
-#### **3.4 System Diagram**
+### **4.4 System Diagram**
 
 The diagram below illustrates how all of the components on the AutoVehicle are
 interconnected. The raspberry pi is the central hub for all the devices to
 communicate within the structure.
 
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/systemd.png)
+![](images/systemd.png)
 
-#### **3.5 Mechanical Assembly**
+ 
+
+### **4.5 Mechanical Assembly**
 
 To start unbox all the parts that come in the 4WD chassis kit then start by:
 
@@ -816,9 +1045,9 @@ To start unbox all the parts that come in the 4WD chassis kit then start by:
 -   And finally place the sensor circuit somewhere on the edge of the chassis so
     nothing will be interfering with the sensors like the wires.
 
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/boardschematic.png)
+ 
 
-#### **3.6 PCB/Soldering**
+### **4.6 PCB/Soldering**
 
 The files needed to recreate the PCB can be found at this link: [PCB
 layout](https://github.com/Khemar1/khemar1.github.io/blob/master/PCB%20Eagle%20FIles/sensor%20board%20(2).zip)
@@ -848,15 +1077,15 @@ sponge (this is done to clean the iron)
 Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
 TO FOLLOW SCHEMATIC BELOW)
 
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pcblayout.png)
+![](pcblayout.png)
 
-#### **3.7 Power Up**
+### **4.7 Power Up**
 
 In this phase, you will be powering up your car and PCB(if you chose to use one)
 
  
 
-##### Powering up the PCB
+**Powering up the PCB**
 
 -   The raspberrypi by default comes loaded with an OS but it is recommended you
     reinstall it
@@ -888,7 +1117,7 @@ In this phase, you will be powering up your car and PCB(if you chose to use one)
 
  
 
-##### Powering up the Car
+**Powering up the Car**
 
 -   Put the batteries into the battery holder
 
@@ -906,13 +1135,79 @@ In this phase, you will be powering up your car and PCB(if you chose to use one)
 
  
 
-\*talk about bluetooth code.... sudo apt-get install python-bluez
+### **4.8 Additional Installations​ & Modifications**
 
-#### **Website Designing**
+The code written for utilizing the Bluetooth library is written in Python.
+Although Python has a large and comprehensive library, it does not yet have a
+standard library for Bluetooth. As such, to utilize the Bluetooth functionality
+for this project there are additional libraries that need to be install. In
+addition to those libraries, there is also a file that needs to be modified.
+These will be explained further as follows.
+
+**PyBluez​**
+
+PyBluez is an extension module written in C that provides access to the rasperry
+pi’s Bluetooth resources. To install it you simply need to log into your
+raspberry pi and open the terminal window. After this all you need to do is run
+the command:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo apt-get install py-bluez
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**SDPTool**
+
+SDPTool is a library in linux that provides the interface for performing SDP
+queries on Bluetooth devices. To utilize this code you will need to load the
+serial port profile by using the command
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo sdptool add SP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In addition to running that command you will need to run the Bluetooth daemon in
+compatibility mode. You can do this by editing the
+/etc/systemd/system/dbus-org.bluez.service file. Instructions to do this are as
+follows:
+
+-   Find the location of bluetooth.service by
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+systemctl status bluetooth.service
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-   After find the location go to that location edit bluetooth.service
+
+-   Look for
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ExecStart=/usr/libexec/bluetooth/bluetoothd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-   add -C or --compat at the end of this line and save it.
+
+-   Run the command
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+service bluetooth start
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-   Finally reset the adapter using
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo hciconfig -a hci0 reset
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+After making these modifications you should be able to run the Bluetooth python
+code.
 
  
 
-#### **Mobile Application**
+### **4.9 Website Designing**
+
+ 
+
+### **4.10 Mobile Application**
 
 The files needed to recreate the android application can be found at the
 following link: <https://github.com/bilfnous/AutonomousVehicle>
@@ -954,79 +1249,90 @@ it does not have access to bluetooth.
 -   After clicking the run button you will be met with a screen that asks you to
     choose which device you want to run the application on, choose your device
 
-  \pagebreak
-
-### 4. Specific Requirements
-
-This section contains all the of the functional and quality requirements of the
-system. It gives a detailed description of the system and all its features
-
- 
-
-#### 4.1 External interface Requirements
-
-This sections provides a detailed description of all inputs and outputs into the
-system. It also gives a description of the hardware and software involved in the
-system.
-
- 
-
-##### **User Interface**
-
-When a user opens the application for the first time they should be greeted by a
-login page. Assuming the user does not have login credentials, they can signup
-by going to the signup page which is an option in the login page. After signing
-up the user can go back to the login page. For future instances users have the
-option of the application remembering their username so that when they open the
-application the next time they only have to enter their password.
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/login.png)
-
-\*login
-
-After logging into the application the user will be taken to the main menu where
-they can choose to use any of the applications main functionalities, which are:
-the remote control(over WiFi), remote control(over Bluetooth) and mapping.
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/mainmenu.png)
-
-When users attempts use the first remote control function they will be prompted
-to go to settings and enter an ip address. This ip address is required for the
-user to connect to the robot over an internet connection. After entering the ip
-address users can go back to the remote control app and select the connect
-option. After connecting they will now be able to move the car with the remote
-control and a direction will be displayed corresponding with the position of the
-joystick.
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/wifiremote.png)
-
-The mapping activity also prompts the user with an onscreen prompt to go to
-settings. When the user goes to settings they can turn the Bluetooth on with the
-touch of a button. After turning the Bluetooth on the user will now be able to
-use the mapping functionality. The user must tap the start button and after
-doing so they will receive an onscreen notification saying they have connected.
-When the user taps stop they be notified that the map has been received and it
-will be displayed.
-
-![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/mapping.png)
-
- 
-
- 
-
- 
-
  
 
   \pagebreak
 
-### 5. Progress Reports
+ 
+
+5. Project Schedule
+-------------------
+
+*Hardware Timeline*
+
+| Week \# | Task                       | Date                    |
+|---------|----------------------------|-------------------------|
+| Week 1  | Selecting Project          | 09/06/2016 - 09/12/2016 |
+| Week 2  | Project Proposal           | 09/12/2016 - 09/19/2016 |
+| Week 3  | Meeting                    | 09/19/2016 - 09/26/2016 |
+| Week 4  | Total Budget               | 09/26/2016 - 10/03/2016 |
+| Week 5  | Components Purchased       | 10/03/2016 - 10/10/2016 |
+| Week 6  | Assembling Components      | 10/10/2016 - 10/17/2016 |
+| Week 7  | PCB                        | 10/17/2016 - 10/24/2016 |
+| Week 8  | Placard                    | 10/24/2016 - 10/31/2016 |
+| Week 9  | Progress Report            | 10/31/2016 - 11/07/2016 |
+| Week 10 | Peer Grading Demonstration | 11/07/2016 - 11/14/2016 |
+| Week 11 | Individual Build Video     | 11/14/2016 - 11/21/2016 |
+| Week 12 | Progress Report            | 11/21/2016 - 11/28/2016 |
+| Week 13 | Presentation               | 11/28/2016 - 12/05/2016 |
+| Week 14 | Build Instructions         | 12/05/2016 - 12/12/2016 |
+| Week 15 | Final Script               | 12/12/2016 - 12/19/2016 |
 
  
 
-#### *February 3, 2017*
+*Integration Timeline*
 
-##### **Status Summary**
+| Week \# | Task                                            | Date                    |
+|---------|-------------------------------------------------|-------------------------|
+| Week 1  | Scheduling Section                              | 01/09/2017 - 01/13/2017 |
+| Week 2  | Project Status                                  | 01/13/2017 - 01/20/2017 |
+| Week 3  | Software Requirements                           | 01/20/2017 - 01/27/2017 |
+| Week 4  | Status Update                                   | 01/27/2017 - 02/03/2017 |
+| Week 5  | Status Update 2                                 | 02/03/2017 - 02/10/2017 |
+| Week 6  | App, Web, and Database Individual Demonstration | 02/10/2017 - 02/24/2017 |
+| Week 7  | Status Update 3                                 | 02/24/2017 - 03/03/2017 |
+| Week 8  | Group Integration                               | 03/03/2017 - 03/10/2017 |
+| Week 9  | Group Troubleshooting                           | 03/10/2017 - 03/17/2017 |
+| Week 10 | Status Update 4                                 | 03/17/2017 - 03/24/2017 |
+| Week 11 | Final Report                                    | 03/24/2017 - 03/31/2017 |
+| Week 12 | Status Update 5                                 | 03/31/2017 - 04/07/2017 |
+| Week 13 | Project Demonstration                           | 04/07/2017 - 04/14/2017 |
+| Week 14 | Group Presentations                             | 04/14/2017 - 04/21/2017 |
+| Week 15 | Final Video Script                              | 04/21/2017 - 04/28/2017 |
+
+ 
+
+ 
+
+6. Progress Reports
+-------------------
+
+Throughout this project we were required to provide our professors with reports
+on our project throughout the school year. In the first semester this project
+were split into two different classes focusing on hardware and software
+respectively. In the second semester there was one class focused on the
+integration if the hardware and software projects. This section will give show
+our progress throughout the cycle of this project and the school year.
+
+ 
+
+### Phase 1 Progress Reports
+
+ 
+
+ 
+
+ 
+
+### Integration Status Reports
+
+ 
+
+*February 3, 2017*
+
+\vspace{2 mm} 
+
+**Status Summary**
 
 With the remote-control part of the project completed we are now focused on the
 mapping functionality and making adjustments to improve the hardware and the
@@ -1035,9 +1341,7 @@ prevent crashing when an incorrect IP address is entered and ways of
 implementing the mapping functionality is being viewed to have a better
 understanding of how it works.  
 
- 
-
-###### **Project Overview**
+**Project Overview**
 
 The mapping functionality is still in the research phase.
 
@@ -1046,7 +1350,7 @@ Bluetooth connectivity.
 
 The web site is under development.
 
-##### **Problems and Opportunities**
+**Problems and Opportunities**
 
 Mapping is a very hard concept to comprehend and implement. We’ve gathered
 information from various sources which mainly include complex algorithms on how
@@ -1058,12 +1362,12 @@ the car. This worked well from our homes but connecting to an enterprise
 WiFi proved to be an issue. This has provided us the opportunity to learn about
 Bluetooth connectivity and how we can incorporate that into our project.
 
-##### **Budget Overview**
+**Budget Overview**
 
 No changes to the budget thus far, we haven’t had to add anything to the
 project.
 
-##### **Conclusions **
+**Conclusions **
 
 Overall the project is still in development. Our goals for this month are to
 prevent the application from crashing, understand and implement the mapping
@@ -1071,9 +1375,11 @@ functionality and have a skeleton for the website.
 
  
 
-#### *February 17, 2017*
+*February 17, 2017*
 
-##### **Status Summary**
+\vspace{2 mm} 
+
+**Status Summary**
 
 This week we met with our collaborator to discuss our options, as it relates to
 mapping. After meeting with the collaborator new solutions were introduced, and
@@ -1084,7 +1390,7 @@ and outlines.
 
  
 
-##### **Project Overview**
+**Project Overview**
 
 The mapping functionality is still in the research phase but will now see some
 progress after we take into consideration the options brought to us by our
@@ -1094,7 +1400,7 @@ and the final outline of the website is taking shape.
 
  
 
-##### **Problems and opportunities**
+**Problems and opportunities**
 
 Jan: A meeting with a collaborator in the mapping field took place, and some
 very interesting ideas were introduced. An electronic peripheral might be used,
@@ -1118,7 +1424,7 @@ www.munro.humber.ca/\~n00994056/index.html
 
  
 
-##### **Budget Overview**
+**Budget Overview**
 
 After meeting with the mapping collaborator, we may have to adjust our budget.
 Among other things, we have taken into consideration an IMU, which should cost
@@ -1126,7 +1432,7 @@ around 50\$.
 
  
 
-##### **Conclusions**
+**Conclusions**
 
 Overall, there has been major progress in regards to the connectivity aspect of
 the project, our goals have been met for this month with the app no longer
@@ -1137,9 +1443,9 @@ to be in development, some initial mapping code and testing should take place. 
 
  
 
-#### *March 10, 2017*
+*March 10, 2017*
 
-##### **Integration Progress**
+**Integration Progress**
 
 After coming to the conclusion that the Wi-Fi is not the best option to go with
 because of restrictions that Humber Wi-Fi has, we have decided to use Bluetooth
@@ -1152,7 +1458,7 @@ and database.
 
  
 
-##### **Project Overview**
+**Project Overview**
 
 The mapping functionality is in progress. So far, a visual of the mapped area
 can be viewed from the raspberry pi when the program is run. Jan will work on
@@ -1164,18 +1470,18 @@ moving forward is to work on retrieving the mapped area and displaying it.
 Bilal is working on establishing a connection between the website and the
 database.
 
-##### **Problems and Opportunities**
+**Problems and Opportunities**
 
 Our main problem currently is establishing connection to the database using the
 website, so the user can sign up/login and view the mapped area.
 
-##### **Budget Overview**
+**Budget Overview**
 
 No changes to the budget thus far.
 
  
 
-##### **Conclusions **
+**Conclusions **
 
 Overall the project is going well after resolving the connection issue by using
 Bluetooth. We now need to work on sending the map to the Android application and
@@ -1184,9 +1490,9 @@ be established.
 
  
 
-#### *March 14, 2017*
+*March 14, 2017*
 
-##### **Troubleshooting status**
+**Troubleshooting status**
 
 Throughout the duration of this project there have been numerous hindrances that
 prevented the integration of the car and the mobile application. From
@@ -1235,11 +1541,12 @@ possibly host the site there since AWS is commonly used by developers.   
 
  
 
-### 6. Testing
+7. Testing
+----------
 
  
 
-#### **Unit Testing**
+### **7.1 Unit Testing**
 
 *Testing the H Drive & Battery Power Up*
 
@@ -1266,6 +1573,48 @@ Plug the raspberry pi into a power source and the LED should turn on.
 
     If the pi is connected to internet you should have no problem
 
+*Testing the Bluetooth*
+
+Assuming the additional libraries were installed you can test the bluetooth by:
+
+-   Turn on the raspberry pi, connect it to a monitor and make sure bluetooth is
+    enabled.
+
+-   Log in and open the terminal
+
+-   Create a new python file, paste this code and save it
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import bluetooth
+
+target_name = "My Phone"
+target_address = None
+
+nearby_devices = bluetooth.discover_devices()
+
+for bdaddr in nearby_devices:
+    if target_name == bluetooth.lookup_name( bdaddr ):
+        target_address = bdaddr
+        break
+
+if target_address is not None:
+    print "found target bluetooth device with address ", target_address
+else:
+    print "could not find target bluetooth device nearby"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-   Run it by using the command:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo filename.py 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+replacing filename with the name of the file you just created.
+
+-   It should now look for available bluetooth devices
+
+ 
+
 *Testing the motors*
 
 -   Ensure all connections are made according to the build instructions
@@ -1276,7 +1625,11 @@ Plug the raspberry pi into a power source and the LED should turn on.
 
 -   Go to your terminal and go to the directory where you downloaded fwback.py
 
--   Run the program using sudo python fwdback.py
+-   Run the program using
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo python fwdback.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -   If all connections were made correctly then the wheels should move forward
     and backward
@@ -1295,7 +1648,11 @@ Plug the raspberry pi into a power source and the LED should turn on.
 -   Open your terminal and go into the directory where you downloaded the
     program
 
--   Run the program using the command: sudo python sensor2.py
+-   Run the program using the command:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo python sensor2.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -   Place an object in front of the sensor and it should return the distance of
     the object to the screen.
@@ -1304,7 +1661,7 @@ Plug the raspberry pi into a power source and the LED should turn on.
 
  
 
-#### **Product Testing**
+### **7.2 Product Testing**
 
 When unit testing has been complete and all problems resolved, you can now test
 the car as a whole. Follow these steps to test that all components work
@@ -1325,7 +1682,11 @@ together:
 
 -   Go to your terminal and navigate to where you downloaded auto1.py
 
--   Run the program using sudo python auto1.py
+-   Run the program using
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo python auto1.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -   The wheels should move forward continuously
 
@@ -1354,10 +1715,140 @@ You can further test the car by placing it in an open area and watching it go
 
  
 
+### **7.3 Application Testing**
+
+While testing the hardware it would be beneficial to test the application in
+preparation for the integration of the hardware, software and database. There
+are multiple tests that can be done to ensure that the application is running as
+expected.
+
+*Testing Signup*
+
+The signup activity is used to allow the user to add their information to the
+database allowing them to login.
+
+\*an internet connection is required to signup and login\*
+
+-   First you must open the application and ensure that you have an active
+    internet connect on your device
+
+-   Tap the text under the Log In button that says sign up
+
+-   Enter a first name, user name and a password
+
+-   In the final field reenter the password that was entered in the password
+    field
+
+    There are no word limits or text requirements that need to be met as long as
+    all fields have characters in them and the passwords in both fields match.
+
+-   If the passwords match and all fields are entered then the user can now tap
+    the sign up button and the information will be sent to the database.
+
+-   If any field is left empty and the signup button is tapped an message will
+    be displayed over the empty field and the information will not be sent to
+    the database.
+
+-   If signup is successful the user will then be taken back to the login page.
+
+*Testing Login*
+
+The login activity is the first page the user is greeted with when the
+application is opened. It allows the user to login and use the application
+provided that their information exists in the database
+
+-   If you do not have login credentials follow the signup mentioned in the
+    procedure above. If you do then enter your user name and password
+
+-   Tap the login button
+
+-   If the login information matches the information stored in the database then
+    the user will be presented with the Main Menu page
+
+-   If the login information does not match the information in the database
+
+*Testing Remote Control Activity*
+
+The remote control activities are used to control the car remotely from the
+android device. There are two remote control activities that allow the user to
+connect to the car using two different connections, namely: Bluetooth and
+WiFi(internet). The complete functionality of these activities will be done in
+the integration
+
+-   To test both acitivities the user will need to login to the application
+
+-   First go the first remote control activity from the main menu
+
+    Because there is no IP address entered the user should see a pop up asking
+    them if they would like to go to settings
+
+    Tap the later button and then tap the connect button.
+
+    The application should then display a message saying that the IP address
+    needs to be entered. If the user taps the close connection button another
+    message should be displayed saying that there is no connection to close
+
+-   Next, go back to the main menu and tap the second remote control button
+    under the mapping button.
+
+    The user should again be greeted by a pop up but this time it will say ask
+    the user if they want to turn Bluetooth on in settings
+
+    Tap the later option and try to connect using the connect button.
+
+    The application should display a message saying that Bluetooth needs to be
+    turned on. Additionally if the close connection button is tapped a message
+    should be displayed saying no connection to close.
+
+    Go to settings and turn Bluetooth on or do it through the device’s system UI
+
+    Return to the activity and the message should not be displayed
+
+    If the connect button is tapped it should say trying to establish a
+    connection but because there is no device for it to connect to it will
+    continue searching for a sever
+
+-   Moving the joystick in any of these activities should display text stating
+    which position the joystick is being moved in.
+
+*Testing Mapping Activity*
+
+The mapping activity is used to run the autonomous functionalities of the car
+and display a map of the mapped area on the android device. As with the remote
+control activity, the complete functionality of this activity will be tested in
+the integration tests
+
+-   Login to the application
+
+-   Tap the button that says Mapping in between the two Remote Control buttons
+
+-   If Bluetooth is turned off a pop will display asking if you want to go to
+    settings and turn Bluetooth on
+
+-   Assuming that Bluetooth was not turned on, tap the start button
+
+-   A message should be displayed saying Bluetooth is turned off
+
+-   If the close connection button is tapped while Bluetooth is still off a
+    message should be displayed saying no connection to stop.
+
+-   Go to settings and turn Bluetooth on or do it through the device’s system UI
+
+-   Return to the mapping activity and tap the start button, a message should be
+    displayed saying trying to establish a connection but because there is no
+    connection to be made at the moment the device will continue to search
+
+ 
+
+### **7.4 Integration Testing**
+
+Assuming that all other tests have been run successfully the last set of testing
+required is the
+
   \pagebreak
 
 Conclusion
-----------
+==========
 
 This autonomous vehicle is fully autonomous and uses ultrasonic sensors to
 navigate and record coordinates in an area which can be sent to a database. This
@@ -1372,27 +1863,38 @@ the mapping algorithm which it implements.
 \pagebreak
 
 Recommendation
---------------
+==============
 
-As the project is now, it can be further improved in many aspects. A power bank
-can be used to power the motor instead of the AA batteries, this will allow the
-motor to run for longer periods and it can also be recharged when not in use.
-There is also much room for improvement in the mapping aspect of this project.
-The mapping algorithm mentioned in the project is simple and leaves much to be
-desired. The solution can be refined to either map entire room rather than the
-perimeter of the room. An addition of an IMU unit can be used to further improve
-the project. This IMU unit would contain two accelerometers and a gyrometer
-which would allow the vehicle to.... GPS can also be incorporated to allow the
-vehicle to be aware of its location in a room. \*talk about app and map\*
+The AutoVehicle is a fully functional project that achieves the main
+functionality we desired. Upon the replication of this project there are
+modifications that can be made to improve the project. As such, there are
+recommendations that we would like to make. Firstly, a power bank can be used to
+power the motors and H Drive instead of the AA batteries. This will increase the
+duration of time the motors can be run for and it can also be recharged when not
+in use. Secondly, there is also much room for improvement in the mapping aspect
+of this project. The mapping algorithm mentioned in the project is simple and
+leaves much to be desired. The solution can be refined to either map entire room
+rather than the perimeter of the room. The Bluetooth code was written in Python
+for our educational benefit as we had the opportunity to learn more about the
+language but in the future it would be better and more efficient to code in C
+instead. Python required that we install an additional module that would not
+have been necessary in C. It should also be noted that this module was actually
+was actually written in C. Additionally, the addition of an IMU unit can be used
+to further improve the project. This IMU unit would contain two accelerometers
+and a gyrometer which would allow the vehicle to.... GPS can also be
+incorporated to allow the vehicle to be aware of its location in a room. \*talk
+about app and map\*
+
+ 
 
   \pagebreak
 
 Appendices
-----------
+==========
 
   \pagebreak
 
 References
-----------
+==========
 
  
