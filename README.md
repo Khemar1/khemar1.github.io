@@ -360,14 +360,10 @@ map of the area.
 
 6.  [Progress Reports](#6-progress-reports)
 
-    -   [February 3, 2017](#february-3-2017)
+     -   [Phase 1](#phase-1-progress-reports)
 
-    -   [February 17, 2017](#february-17-2017)
-
-    -   [March 10, 2017](#march-10-2017)
-
-    -   [March 24, 2017](#march-24-2017)
-
+    -   [Integration](#integration-progress-reports)
+    
 7.  [Testing](#7-testing)
 
     [7.1 Unit Testing](#71-unit-testing)
@@ -1452,7 +1448,7 @@ code.
 
 ### **4.9 Website Designing**
 The creation of the website will require knowledge of the php, html & css
-languages. The files needed to publish this website can be found at....
+languages. 
 
 -   To create the website first download the files in :
     <https://github.com/Khemar1/khemar1.github.io/tree/master/website>  
