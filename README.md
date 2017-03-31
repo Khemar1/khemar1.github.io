@@ -1451,7 +1451,20 @@ code.
  
 
 ### **4.9 Website Designing**
+The creation of the website will require knowledge of the php, html & css
+languages. The files needed to publish this website can be found at....
 
+-   To create the website first download the files in :
+    <https://github.com/Khemar1/khemar1.github.io/tree/master/website>  
+    *Before going to the next step see database instructions*
+
+-   Modify the register and login php files to use your database credentials
+
+-   Log in to 000webhost
+
+-   Scroll down to file manager and click on file management 2
+
+-   Go to public_html and upload the code you downloaded in the previous step
  
 
 ### **4.10 Mobile Application**
