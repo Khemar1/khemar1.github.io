@@ -314,21 +314,21 @@ map of the area.
 
     [2.4 User Characteristics](#24-user-characteristics)
 
-    [2.5 Constraints](#25-constraints-assumptions-and-dependencies)
+    [2.5 Constraints](#25-constraints)
 
-    2.6 Assumptions and Dependencies
+    [2.6 Assumptions and Dependencies](#26-assumptions-and-dependencies)
 
-3.  [Specific Requirements](#4-specific-requirements)
+3.  [Specific Requirements](#3-specific-requirements)
 
-    [3.1 External Interface Requirements](#41-external-interface-requirements)
+    [3.1 External Interface Requirements](#31-external-interface-requirements)
 
-    3.2 Functional Requirements
+    [3.2 Functional Requirements](#32-functional-requirements)
 
-    3.3 Performance Requirements
+    [3.3 Performance Requirements](#33-performace-requirements)
 
-    3.4 Logical Database Requirements
+    [3.4 Design Constraints](#34-design-constraints)
 
-    3.5 Software System Attributes
+    [3.5 Software System Attributes](#35-software-system-attributes)
 
 4.  [Build Instructions](#4-build-instructions)
 
@@ -350,11 +350,11 @@ map of the area.
 
     -   [Powering Up Car](#powering-up-car)
 
-    4.8 Additonal Libraries & Modifications
+    [4.8 Additonal Libraries & Modifications](#48-additional-libraries-&-modifications)
 
-    4.9 Designing the Website
+    [4.9 Designing the Website](#49-designing-the-website)
 
-    4.10 Creating the Application
+    [4.10 Creating the Application](#410-creating-the-application)
 
 5.  [Project Schedule](#5-project-schedule)
 
@@ -395,15 +395,18 @@ map of the area.
 **List of Illustrations**
 =========================
 
- 
+Figure 1: Product Perspective This is a illustration of the theoretical
+connections in the system. It shows the different layers of the project and how
+the communicate.
 
- 
+Figure 2: Raspberry Pi This is an illustration of the GPIO pins and connections
+on the raspberry pi. This will be useful when wiring the raspberry pi later on
+in the project.
 
- 
+Figure 3: System Diagram This is an illustration of the system and how each part
+of the system is connected.
 
- 
-
- 
+Figure 4: PCB Layout This is a diagram of the PCB layout.
 
  
 
@@ -446,7 +449,7 @@ will implement.
 
 The purpose of this small scale vehicle is to be able to autonomously navigate
 and map an area. Autonomous vehicles are the current trend in technology and
-this vehicle will be allow a user to make a map of an area without having to
+this vehicle will allow a user to make a map of an area without having to
 physically carry out the task.
 
  
@@ -685,7 +688,7 @@ the hardware and application.
 
  
 
-### **2.5 Constraints, assumptions and dependencies**
+### **2.5 Constraints**
 
 The mobile application is constrained by the internet connection. Since the
 application sends to and receives data from the database over the internet it is
@@ -1158,8 +1161,6 @@ the database.
 
 The application should be written in a way that favors modification.
 
-
-
  
 
 \pagebreak 
@@ -1318,8 +1319,8 @@ sponge (this is done to clean the iron)
 
 **Step 4**
 
-Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
-TO FOLLOW SCHEMATIC BELOW)
+Look at your schematic then begin soldering on the necessary parts. (See figure
+4)
 
  
 
@@ -1597,8 +1598,48 @@ our progress throughout the cycle of this project and the school year.
 
 ### Phase 1 Progress Reports
 
- 
+**Week 2**
+In this week our project team was formed and we drafted our first proposal for
+AutoVehicle.
 
+**Week 3**
+Project Schedule was created and submitted
+
+**Week 4**
+Researched all the necessary components and crafted a budget.
+
+**Week 5**
+Purchase of all necessary components
+
+**Week 6**
+Mechanical assembly milestone, the chassis was assembled
+
+**Week 7**
+The PCB was soldered and demonstrated
+
+**Week 8**
+Created a placard in preparation for open house 
+
+**Week 9**
+Recorded and presented Build Video
+
+**Week 10**
+Demonstration of the hardware
+
+**Week 11**
+Individual build log entries
+
+**Week 12**
+Production testing
+
+**Week 13**
+Individual presentations
+
+**Week 14**
+Build instructions were uploaded 
+
+**Week 15**
+Recorded video giving brief details about the project
  
 
  
@@ -2275,12 +2316,6 @@ its location in a room. \*talk about app and map\*
 
 Appendices
 ==========
-
- 
-
-![](images/screenshots.jpg)
-
- 
 
   \pagebreak
 
