@@ -635,7 +635,7 @@ WiFi, for example will cause the application to crash when trying to connect to
 the car. To avoid this problem Bluetooth functionality will be available as an
 alternative.
 
-![](images/productperspective.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/productperspective.png)
 
  
 
@@ -841,7 +841,7 @@ Overview and Specifications:
 
  
 
-![](images/pi.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pi.jpg)
 
 \pagebreak
 
@@ -1235,7 +1235,7 @@ communicate within the structure.
 
  
 
-![](images/systemd.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/systemd.png)
 
  
 
@@ -1324,7 +1324,7 @@ Look at your schematic then begin soldering on the necessary parts. (See figure
 
  
 
-![](pcblayout.png)
+![](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/pcblayout.png)
 
 ### **4.7 Power Up**
 
