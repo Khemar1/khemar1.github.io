@@ -18,7 +18,7 @@ March 31, 2017
 AutoVehicle by JBK.17
 =====================
 
-Project website: khemar1.github.io
+Project website:<https://github.com/Khemar1/khemar1.github.io>
 
 \vspace{8 mm} 
 
@@ -105,8 +105,8 @@ either connected or mounted on which includes the actuators, the H-bridge
 driver, the ultrasonic sensors and the brain of it all the Raspberry Pi 3. The
 vehicle’s sensors are used to avoid obstacles that are detected and at the same
 time send data to be used to map an area that will be displayed in the mobile
-application. Through Wi-Fi the ability to remote control the vehicle is possible
-using the mobile application.
+application. Through Wi-Fi and Bluetooth the ability to remote control the
+vehicle is possible using the mobile application.
 
 We have searched for prior art via Humber’s IEEE subscription selecting “My
 Subscribed Content” [1] and have found and read the following three articles
@@ -541,73 +541,38 @@ area to the user.
 
 A website will be developed to allow the user can login to his account. Each
 specific user will be able to see their previous data been collected using the
-AutoVehicle. One section of the web site will have a small bio for the
+AutoVehicle. One section of the web site will have a small biography for the
 developers of the project and their contributions. Another page will contain a
-step by step explanation for those who may wish to recreate the project on their
-own. In addition to those, a section will be added to allow visitors give us
-feedback and suggestions on how we may improve the project.
+step by step a copy of this technical report. In addition to those, a section
+will be added to allow visitors give us feedback and suggestions on how we may
+improve the project.
 
-(Developed by Bilal Alfanous)
+(Developed by Bilal Al-fanous)
 
  
 
 **Mobile Application**
 
-The AutoVehicle Application is used to communicate with the autonomous vehicle
-remotely. It has in total 12 java classes which includes 7 activities. The
-functions of the activities are as follows:
-
-Login Activity is where the user enters their information to get access to the
-application. The required information to sign in are a username and a password.
-Before logging in users have the option to save their username by touching the
-remember me switch. Upon tapping the sign in button the entered information will
-be sent to the database to be verified.
-
-The Signup Activity allows users without preexisting credentials to add their
-information to the database. The required fields are Name, Username and
-password. The user will also have to reenter their password in another field to
-ensure that it is correct. If any of these fields are left blank the user will
-not be presented with messages above the fields that need to be filled. Upon the
-completion of this, the information is sent to the database.
-
-Menu Activity is the page the user sees upon successfully login, they can now
-choose whether they want to control the car or start the autonomous feature to
-retrieve a map. They also have the ability to enter the settings activity using
-the drop options menu in the top right corner of the screen.
-
-The settings activity is where the user can enter the IP address of their car
-and turn on their Bluetooth. These settings are required to connect to the car.
-
-The remote control activity has a joystick which the user can use to control the
-car. Before opening this activity it is recommended that users enter an IP
-address in the settings activity. Upon the opening of this activity the user
-will be present with an alert dialog asking them if they want to go to settings
-to enter an IP address. When an IP address is present in the IP address field it
-is possible to attempt to establish a connection to the car. When connected can
-be used to move the car forward, backward or to the right and left. If the an IP
-address is not entered the joystick can still be moved but it will serve no
-purpose. The close connection button is used to terminate the connection between
-the application and the car.
-
-The second Remote Control activity is functionally similar to the first one
-except that this one connects to the car through a Bluetooth Connection. Upon
-the opening, an alert dialog will be displayed asking the user to go to settings
-and turn on Bluetooth. If the Bluetooth is off and the connect button is tapped,
-a toast will appear saying stating that the user must go to settings and turn
-Bluetooth on. When Bluetooth is on and the connect button is tapped a toast will
-appear saying connecting, and upon successful connection another toast will
-appear saying connected. The joystick can be used in a similar fashion to the
-first remote control activity. The close connection button is used to terminate
-the connection
-
-The mapping activity is where the autonomous function of the car can be
-utilized. This activity requires that Bluetooth be turned on. The start button
-is used to attempt to establish a connection to the car. Upon successful
-connection a toast will appear saying that the car has started. To retrieve the
-map the stop button is used stop the car and a drawn map of the will be
-displayed in the white area above.
-
  
+
+The AutoVehicle Application is used to communicate with the autonomous vehicle
+remotely. It has in total 13 java classes which includes 6 activities. The
+functions of the activities are as follows: Login Activity is the first page the
+user will see when they open the application, it is where the user enters their
+information to get their user specific information which is stored in the
+database; MenuActivity is the page the user sees after they successfully login,
+they can now choose whether they want to control the car or retrieve a map; The
+register activity is where new users sign up with their information to be stored
+in the database. After registering users will be taken back to the login page;
+The first remote control activity has a joystick which the user can use to
+control the car over an internet connection; The remote control(BT) activity is
+similar to the first remote control activity except it allows the user to
+control the can over a bluetooth connection; the settings activity is where the
+user can enter the ip address of their car so that they can connect to it; the
+mapping activity is where the user can see tell the car to start mapping and
+retrieve the map that their car has made. The application will work in unison
+with both the database and hardware to be fully functional. In addition to these
+various features, the application also has support for both English and French.
 
 (Developed by Khemar Bryan)
 
@@ -671,9 +636,9 @@ alternative.
 
  
 
-### **2.3 Product functions**
-
  
+
+### **2.3 Product functions**
 
 Using the mobile application, users logged in will have two main choices on a
 menu first the remote control functionality and second the mapping
@@ -792,17 +757,9 @@ up the user can go back to the login page. For future instances users have the
 option of the application remembering their username so that when they open the
 application the next time they only have to enter their password.
 
-![](images/login.png)
-
- 
-
 After logging into the application the user will be taken to the main menu where
 they can choose to use any of the applications main functionalities, which are:
 the remote control(over WiFi), remote control(over Bluetooth) and mapping.
-
-![](images/mainmenu.png)
-
- 
 
 When users attempts use the first remote control function they will be prompted
 to go to settings and enter an ip address. This ip address is required for the
@@ -812,10 +769,6 @@ option. After connecting they will now be able to move the car with the remote
 control and a direction will be displayed corresponding with the position of the
 joystick.
 
-![](screenshots/wifiremote.png)
-
- 
-
 The mapping activity also prompts the user with an onscreen prompt to go to
 settings. When the user goes to settings they can turn the Bluetooth on with the
 touch of a button. After turning the Bluetooth on the user will now be able to
@@ -824,8 +777,6 @@ doing so they will receive an onscreen notification saying they have connected.
 When the user taps stop they be notified that the map has been received and it
 will be displayed.
 
-![](screenshots/mapping.png)
-
 The remote control with Bluetooth activity is very similar in functionality to
 the remote control with WiFi activity. The main difference is that in this
 activity the user will connect to the car through a Bluetooth connection rather
@@ -833,7 +784,7 @@ than an internet connection. If the user does not have Bluetooth turned out or
 their device does not have a Bluetooth adapter they will not be able to use this
 functionality.
 
-![](screenshots/bluetoothremote.png)
+ 
 
  
 
@@ -850,9 +801,46 @@ is where all code will be stored, compiled and run from from. This was the only
 pre-specified piece of hardware as it was a strict requirement for this academic
 project.
 
- 
+Overview and Specifications:
+
+-   Dual step-down (buck) power supply for 3.3V and 1.8V
+
+-   5V supply has polarity protection, 2A fuse and hot-swap protection
+
+-   USB/Ethernet controller chip
+
+-   4 USB ports
+
+-   40 GPIO pins. The top/first 26 pins match the original layout of old
+    raspberry PIs, 9 additional GPIO and 2 EEPROM Plate identification pins
+
+-   Composite (NTSC/PAL) video integrated into 4-pole 3.5mm 'headphone' jack
+
+-   MicroSD card socket
+
+-   Four mounting holes in rectangular layout
+
+-   Size: 85mm x 56mm
+
+-   Processor, Broadcom SoC running at 700MHz (can be overclocked)
+
+-   RAM, 512MB soldered on top of the Broadcom chip
+
+-   power connector, microUSB
+
+-   software – riparian will be used as an OS
+
+-   HDMI port
+
+-   Audio part of the A/V jack is the same
+
+-   Camera and DSI Display connector
 
  
+
+![](images/pi.png)
+
+\pagebreak
 
  
 
@@ -908,25 +896,275 @@ Specifications:
 
 -   Weight: *26g*
 
-![](l298.png)
+ 
+
+ 
 
 *HC-SR04 Ultrasonic Ranging Module*
 
 There are two of these modules and they are used to detect objects within a
 certain range of the car. The ranges can be toggled using code on the raspberry
-pi but the specified range is between 20cm - 400cm.
+pi but the specified range is between 20cm - 400cm. It is accurate up to 3 mm.
+The module has ultrasonic transmitters, receiver and control circuit.
+
+ 
+
+Electric Parameters:
+
+| Working Voltage      | DC 5 V                                             |
+|----------------------|----------------------------------------------------|
+| Working Current      | 15mA                                               |
+| Working Frequency    | 40Hz                                               |
+| Max Range            | 4m                                                 |
+| Min Range            | 2cm                                                |
+| Measuring Angle      | 15 degrees                                         |
+| Trigger Input Signal | 10uS TTL pulse                                     |
+| Echo Output Signal   | Input TTL lever signal and the range in proportion |
+| Dimension            | 45\*20\*15mm                                       |
+
+ 
 
  
 
 *Hwydo 4WD Robot Smart Car Chassis*
 
- 
+This chassis was chosen because it was inexpensive and it met our requirements.
+For this project we wanted something that the raspberry pi could fit on top of,
+able to balance itself and turn efficiently. We briefly considered a 3 wheeled
+chassis which was able to balance but the turning was not as efficient.
 
  
+
+Specifications
+
+-   Size: 27 x 14 x 4 cm (Slightly larger than our required size)
+
+-   Carrying Capacity: 1 KG
+
+-   Gear Motor rotate speed: 125 rev/min
+
+-   Gear Motor Power: 6 V
+
+-   Weight: 600 G
+
+-   Powered by: 6 AA Batteries
+
+ 
+
+Included in the chassis is:
+
+-   2 x Acrylic Plates 
+
+-   4 x DC Gear Motor (125/min,6V) 
+
+-   4 x wheels 
+
+-   2 x encoder disk
+
+-   1 x AA x 4 Battery Holder
+
+-   1 x Power Switch
+
+-   Full set of screws and nuts
+
+ 
+
+*Dual Shaft Gear DC Motor*
+
+This component is included in the the smart car chassis. This gear box is
+applied for tracing car or robot.
+
+Technical Details:
+
+| Product Name            | DC Geared Motor                               |
+|-------------------------|-----------------------------------------------|
+| Rated Voltage           | DC 3V - 5V                                    |
+| Rated Current           | \~160mA (at no load)                          |
+| Speed                   | \< 120 RPM at No Load                         |
+| Plastic Tire Wheel Size | 65 x 25mm/ 2.6″ x 0.98″ (D\*T)                |
+| Motor Size              | 65 x 22 x19mm/ 2.6″ x 0.87″ x 0.75″ (L\*W\*T) |
+| Color                   | Yellow, Black                                 |
+| Material                | Metal, Plastic                                |
+| Weight                  | 67g                                           |
+
+ 
+
+### 3.2 Functional Requirements
+
+This section includes the requirements that specify all fundamental actions of
+the system.
+
+ 
+
+*Functional Requirement 3.2.1*
+
+Title: Registration
+
+Description: Users should be ale to register through the mobile application. The
+user must supply a fullname, username and password to be entered into the
+database.
+
+ 
+
+*Functional Requirement 3.2.2*
+
+Title: Login*​*
+
+Description: If a user has already registered for the application they should be
+able to login.
+
+ 
+
+*Functional Requirement 3.2.3*
+
+Title: Main Menu
+
+Description: Given that a user has logged into the application they should be
+able to choose which function they want to utilize
+
+ 
+
+*Functional Requirement 3.2.4*
+
+Title: Toggle Bluetooth
+
+Description: Given that users are logged into the application they should be
+able to toggle Bluetooth on and off without having to use the device’s UI.
+
+ 
+
+*Functional Requirement 3.2.5*
+
+Title: Connect to car
+
+Description: Users should be able to connect to the Raspberry Pi mounted car
+through Bluetooth or over an internet connection
+
+-   An internet connection can be established by entering the IP address in
+    settings and connecting from the first remote control activity.
+
+-   A Bluetooth connection can be established in both the Mapping and Remote
+    Control(BT) Activities by toggling on Bluetooth in settings and connecting
+    through either activity
+
+-   Both these functions require that the programs be running on the Raspberry
+    Pi
+
+ 
+
+*Functional Requirement 3.2.6*
+
+Title: Control Car
+
+Description: Given that users have connected to the car through either Bluetooth
+or WiFi they should be able to move the car using an onscreen joystick or
+starting the the autonomous feature.
+
+ 
+
+*Functional Requirement 3.2.7*
+
+Title: Display a map
+
+Description: Given that a Bluetooth connection has been established users should
+be able to start the autonomous feature of the car and display a map of the area
+when the stop button is tapped
+
+ 
+
+*Functional Requirement 3.2.9*
+
+Title: Support French
+
+Description: Given that a user’s device language settings are set to French, the
+app should be able to support this language
+
+ 
+
+*Functional Requirement 3.2.10*
+
+Title: Login - Website
+
+Description: Given that a user’s information is present in the user database,
+the user should be able to login on the website.
+
+ 
+
+### 3.3 Performance Requirements
+
+ 
+
+*3.3.1 Usage of the Remote Control*
+
+The remote control should be easy to use and give the user feedback. In
+addition, whichever direction they move the joystick in the car should move in
+that direction.
+
+ 
+
+*3.3.2 Usage of features*
+
+The different features should be evident and in plain view of the user
+
+ 
+
+*3.3.3 System Dependability*
+
+If the application is unable to connect to the car the user should receive some
+sort of feedback
+
+ 
+
+### 3.4 Design Constraints
+
+ 
+
+*3.4.1 API Level*
+
+The API level the app is designed to run on.
+
+The application requires that the user’s device be running on at least Android
+API level 19
+
+ 
+
+*3.4.2 Device Internal Storage Space*
+
+The amount of space the application requires.
+
+The application requires at least 14 MB of internal storage
+
+ 
+
+### 3.5 Software System Attributes
+
+ 
+
+*3.5.1 Bluetooth Connection*
+
+The application should be able to connect through Bluetooth in order to
+communicate with the car.
+
+ 
+
+*3.5.2 Internet Connection*
+
+The application should be connected to the internet in order to communicate with
+the database.
+
+ 
+
+*3.5.3 Application Extendability*
+
+The application should be written in a way that favors modification.
+
+
 
  
 
 \pagebreak 
+
+ 
 
 **4. Build Instructions**
 -------------------------
@@ -970,6 +1208,8 @@ these parts excluding the Raspberry Pi can be purchased from Creatron Inc. The
 raspberry pi can be ordered online through amazon. Parts with a “\*” can be
 replaced with suitable alternatives.
 
+ 
+
 | *Item*                                   | *Cost(Before Tax)* | *Tax*    | *Cost(After Tax)* |
 |------------------------------------------|--------------------|----------|-------------------|
 | Raspberry Pi Kit                         | \$ 99.99           | \$ 13.00 | \$ 112.99         |
@@ -984,11 +1224,15 @@ replaced with suitable alternatives.
 
  
 
+\pagebreak
+
 ### **4.4 System Diagram**
 
-The diagram below illustrates how all of the components on the AutoVehicle are
+Figure 3 illustrates how all of the components on the AutoVehicle are
 interconnected. The raspberry pi is the central hub for all the devices to
 communicate within the structure.
+
+ 
 
 ![](images/systemd.png)
 
@@ -1076,6 +1320,8 @@ sponge (this is done to clean the iron)
 
 Look at your schematic then begin soldering on the necessary parts. (MAKE SURE
 TO FOLLOW SCHEMATIC BELOW)
+
+ 
 
 ![](pcblayout.png)
 
@@ -1248,6 +1494,39 @@ it does not have access to bluetooth.
 
 -   After clicking the run button you will be met with a screen that asks you to
     choose which device you want to run the application on, choose your device
+
+### **4.11 Database**
+
+The Database holds the users login information along with each users retrieved
+map send from the Hardware(Raspberry Pi) to be send and displayed on the
+website. its structures consists of 5 fields; user_id which an auto incremented
+Integer which gives each user an id, a name which is a Varchar that holds only
+the users first name, a username which is a Varchar that hols the users
+username, a password which is also a Varchar which holds the hashed password of
+each user and finally map a Longtext field which holds the map. To recreate the
+database database you must:
+
+-   Signup for an account on 000webhost.com
+
+-   Navigate to Database then click mysql to create a database
+
+-   Enter information in the specified fields then click create database
+
+-   Wait a few minutes for the database to be created and loaded then click
+    phpmyadmin and select the database you created by clicking enter phpmyadmin
+
+-   From here you will create a table with the specified fields
+
+-   Download the files
+    [Login.php](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/Login.php)
+    and
+    [Register.php](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/Register.php)
+    from our repository
+
+-   Scroll down to file manager and click on filemanager 2
+
+-   Enter the public-html folder and place the files you just downloaded into
+    this folder
 
  
 
@@ -1720,7 +1999,8 @@ You can further test the car by placing it in an open area and watching it go
 While testing the hardware it would be beneficial to test the application in
 preparation for the integration of the hardware, software and database. There
 are multiple tests that can be done to ensure that the application is running as
-expected.
+expected. These tests are focused on checking if the application is connected to
+the database and whether the application is usable.
 
 *Testing Signup*
 
@@ -1843,9 +2123,113 @@ the integration tests
 ### **7.4 Integration Testing**
 
 Assuming that all other tests have been run successfully the last set of testing
-required is the
+required is the integration of the entire system. You should have already tested
+the connection from the application to the database in the application testing
+and the functionality of the car in the unit and product testing. This stage is
+focused on testing whether the system on a whole is integrated and functional
 
-  \pagebreak
+*Testing remote control of the car*
+
+This will test the connection between the car and application in addition to
+testing the remote control features that were explored in the remote control
+activity testing mentioned previously.
+
+-   Turn on your raspberry pi and log in
+
+-   Open the terminal
+
+-   Download
+    [bluetoothserv.py](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/bluetoothserv.py),
+    [ctest.c](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/ctest.c)
+    and
+    [functions.c](https://github.com/Khemar1/khemar1.github.io/blob/master/documentation/functions.c)
+
+-   Verify that the bluetooth functionality is working by referring to the Build
+    Instructions and the Bluetooth testing above and ensure that you have
+    followed all the necessary steps
+
+-   Go to your terminal and navigate to the directory that you stored
+    bluetoothserv.py in
+
+-   Run the command
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo python bluetoothserv.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This program will create a bluetooth server running on an RFCOMM channel, by
+default you should be on RFCOMM channel 1
+
+If all the necessary Bluetooth steps were followed the terminal should print
+“Waiting for connections”
+
+-   Log in to your application
+
+-   Tap the three vertical dots in the top right corner of the screen and from
+    the options menu go to settings
+
+-   Turn Bluetooth on
+
+-   Go back to the main menu and tap the second remote control button, the one
+    under the mapping button
+
+-   Tap the connect button and a message should appear saying trying to connect
+
+-   The application should now connect to server running on the raspberry pi,
+    the connection is confirmed by a message in both the application and in the
+    terminal window of the raspberry pi. ON the application a message should
+    appear saying connected. In the terminal window you should see “found a
+    connection” followed by your device’s mac address.
+
+-   Move the joystick in any direction, if the car moves then the test is
+    successful
+
+-   Tap the close connection button to stop the car and terminate the connection
+
+ 
+
+*Testing the autonomous mapping functionality*
+
+This is a test of the core functionality of the car which is the autonomous
+operation.
+
+-   Turn on your raspberry pi and log in
+
+-   Open the terminal
+
+-   Go to your terminal and navigate to the directory that you stored
+    bluetoothserv.py in previously
+
+-   Run the command
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sudo python bluetoothserv.py
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-   Log in to your application
+
+-   Tap the three vertical dots in the top right corner of the screen and from
+    the options menu go to settings
+
+-   Turn Bluetooth on
+
+-   Go back to the main menu and tap the mapping button
+
+-   Tap the start button and a message should appear saying trying to connect
+
+-   The application should now connect to the server
+
+-   The car should now be observed moving
+
+-   The display the map tap the stop button to stop the car. A message should
+    appear saying the car has stopped and the map should display in the white
+    area above.
+
+ 
+
+ 
+
+\pagebreak
 
 Conclusion
 ==========
@@ -1881,9 +2265,9 @@ instead. Python required that we install an additional module that would not
 have been necessary in C. It should also be noted that this module was actually
 was actually written in C. Additionally, the addition of an IMU unit can be used
 to further improve the project. This IMU unit would contain two accelerometers
-and a gyrometer which would allow the vehicle to.... GPS can also be
-incorporated to allow the vehicle to be aware of its location in a room. \*talk
-about app and map\*
+and a gyroscope which would allow the vehicle to track it’s position more
+efficiently. GPS can also be incorporated to allow the vehicle to be aware of
+its location in a room. \*talk about app and map\*
 
  
 
@@ -1891,6 +2275,12 @@ about app and map\*
 
 Appendices
 ==========
+
+ 
+
+![](images/screenshots.jpg)
+
+ 
 
   \pagebreak
 
